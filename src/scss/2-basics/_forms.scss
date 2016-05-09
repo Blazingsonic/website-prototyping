@@ -1,0 +1,66 @@
+::-webkit-input-placeholder {
+   color: $color-text-dark;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $color-text-dark;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $color-text-dark;
+}
+
+:-ms-input-placeholder {  
+   color: $color-text-dark; 
+}
+
+.form-wrap {
+	margin-top: $base-line-height * 2;
+}
+
+form {
+	margin-top: $base-line-height;
+}
+
+input, textarea {
+	@include type-setting(-2);
+	background-color: #ccc;
+	border: none;
+	padding: 1.5rem;
+	width: 100%;
+	border-radius: 1.5rem;
+}
+
+input {
+	height: $base-line-height;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	width: 1rem;
+	height: 1rem;
+	margin-bottom: 0;
+	margin-right: $base-line-height / 2;
+}
+
+.form-checkbox {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+	span {
+		@include type-setting(-2);
+		font-weight: bold;
+	}
+}
+
+textarea {
+	padding: 0.75rem;
+}
+
+fieldset {
+	border: none;
+}
+
+
+
+

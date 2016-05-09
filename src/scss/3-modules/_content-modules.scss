@@ -1,0 +1,279 @@
+// ==========================================================================
+// General Module Elements
+// ==========================================================================
+
+
+
+// ==========================================================================
+// Hero Module
+// ==========================================================================
+
+.hero-module {
+
+	& > p {
+		// @include type-setting(1);
+		//max-width: 38rem; // make general max-width classes or handle max-width over html tags?
+		margin-bottom: $base-line-height;
+	}
+}
+
+// ==========================================================================
+// Featured Content Module
+// ==========================================================================
+
+.featured-content {
+	background: url($path-img + '/china.jpeg');
+	background-size: cover;
+	
+	.play {
+		
+		@include media('>large') {
+			margin: $base-line-height * 6 0;	
+		}
+	}
+}
+
+// ==========================================================================
+// Vorteile Module
+// ==========================================================================
+
+.vorteile.module {
+	padding-bottom: $base-line-height * 3;
+}
+
+.vorteile-journey-wrap {
+	margin-top: $base-line-height * 2;
+	
+	.vorteil {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		// width: 33.333%;
+		padding: $base-line-height 2rem;
+		
+		h3 {
+			font-weight: bold;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// ==========================================================================
+// Erlebnis Module
+// ==========================================================================
+
+.erlebnis {
+	position: relative;
+	background: url($path-img + '/waterfall.jpeg');
+	background-size: cover;
+	
+	.bg-module {
+		padding-bottom: 0;
+		
+		article {
+			position: relative;
+			z-index: 99;
+		}
+	}
+}
+
+.oculus-woman {
+	position: relative;
+	height: 25rem;
+	z-index: 1;
+	background: url($path-img + '/oculus-woman.png');
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	
+	@include media('<medium') {
+		height: 20rem;
+	}
+}
+
+.yt-video {
+	position: relative;
+	width: 100%;
+	height: 23rem;
+	background: url($path-img + '/desert.jpeg');
+	background-size: 100%;
+	background-position: bottom;
+	
+	.yt-video-controls {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url($path-img + '/svg/yt-video-controls.svg');
+		background-size: contain;
+		background-position: 50% 95%;
+		background-repeat: no-repeat;
+	}
+}
+
+.remodal {
+	
+	h3 {
+		margin-top: $base-line-height;
+	}
+
+	p {
+		margin-bottom: $base-line-height;
+		max-width: 25rem;
+	}
+}
+
+// ==========================================================================
+// CTA-Demo Module
+// ==========================================================================
+
+.cta-demo {
+	position: relative;
+
+	article {
+		
+		p {
+			margin-bottom: $base-line-height;
+		}
+
+		p:last-child {
+			margin-bottom: $base-line-height * 2;
+			
+			span {
+				font-weight: bold;
+			}
+
+			@include media('<medium') {
+				//margin-bottom: $base-line-height * 7;
+			}
+		}
+
+		button {
+			margin-top: $base-line-height;
+		}
+	}
+
+	&.module {
+		padding-bottom: 0;
+	}
+}
+
+.oculus-man {
+	height: 25rem;
+	background: url($path-img + '/oculus-man.png');
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	
+	@include media('<medium') {
+		height: 20rem;
+	}
+}
+
+.devices-wrap {
+	width: 100%;
+	background-color: #f2f2f2;
+	//padding: $base-line-height / 2;
+	
+	.devices {
+		height: 14rem;
+		background: url($path-img + '/devices.png');
+		background-size: contain;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		
+		@include media('<medium') {
+			height: 10rem;
+		}
+	}
+}
+
+// ==========================================================================
+// Commerce Module
+// ==========================================================================
+
+.commerce-journey {
+	display: flex;
+	flex-flow: column nowrap;
+	margin-top: $base-line-height * 4;
+	
+	.commerce-journey-step {
+		display: flex;
+		align-items: center;
+		margin-bottom: $base-line-height * 2;
+		
+		&:nth-child(2n) {
+			margin-left: auto;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+			
+			div, p {
+				margin-bottom: 0;
+			}
+		}
+
+		.rounded-icon-default {
+			margin-right: $base-line-height;
+		}
+
+		h3 {
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+}
+
+// ==========================================================================
+// Facts Module
+// ==========================================================================
+
+#facts {
+	background: url($path-img + '/green-night.jpeg');
+	background-size: cover; // Mixin for background settings?
+}
+
+section.facts-list {
+	margin-top: $base-line-height * 4;
+	
+	.fl-item {
+		width: 16rem;
+		
+		@include media('<small') {
+			margin-bottom: $base-line-height * 2;
+		}
+		
+		div {
+			@include type-setting(3);
+		}
+	}
+}
+
+// ==========================================================================
+// Contact Module
+// ==========================================================================
+
+#contact {
+	
+	form {
+		margin-top: $base-line-height * 4;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

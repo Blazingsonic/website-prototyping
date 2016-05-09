@@ -1,0 +1,92 @@
+/* General Font Styles -------------------- */
+
+// Vertical Rythm Setup
+
+h1, h2, h3, h4, h5, h6, hgroup, p {
+	margin-top: 0;
+	margin-bottom: $base-line-height;
+}
+
+h1 {
+	@include type-setting(6);
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	color: $color-text-light;
+	margin-bottom: $base-line-height / 2;
+}
+
+h2 {
+	@include type-setting(5);
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	margin-bottom: $base-line-height / 2;
+}
+
+h3, .h3 {
+	@include type-setting(-1);
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	margin-bottom: $base-line-height / 2;
+}
+
+h4, .h4 {
+	@include type-setting(-2);
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
+p {
+	@include type-setting(-2);
+	letter-spacing: 0.1rem;
+}
+
+/* Specific Font Styles -------------------- */
+
+p.small {
+	@include type-setting(-2);
+	letter-spacing: 0.1rem;
+}
+
+span.medium {
+	color: rgba(0, 0, 0, 0.5);
+} 
+
+span.light {
+	color: rgba(0, 0, 0, 0.375);
+}
+
+// Quote
+
+p.quote,
+p.name {
+	@include type-setting(1);
+	font-weight: bold;
+	margin: 0 0 $base-line-height;
+}
+
+p.quote {
+	text-align: right;
+	padding-right: $base-line-height * 3;
+}
+
+// Secondary
+
+p.secondary {
+	@include type-setting(-1);
+}
+
+// Tertiary
+
+p.tertiary {
+	@include type-setting(0);
+	color: $color-ter;
+}
+
+
+
+
+
+
+

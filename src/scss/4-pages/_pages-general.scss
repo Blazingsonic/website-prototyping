@@ -1,0 +1,44 @@
+// ==========================================================================
+// INDEX PAGE
+// ==========================================================================
+
+
+
+// ==========================================================================
+// CTA PAGE
+// ==========================================================================
+
+.page-cta {
+	
+	.hero-wrap {
+		background: url($path-img + '/hero-cta.png');
+		background-size: cover;
+		background-position: center;
+	    height: 36rem;
+	    
+	    .black-bg {
+			//background-color: rgba(0, 0, 0, 0.35);
+			padding: $base-line-height * 5 $base-line-height * 3;
+			height: 100%;
+		}
+	}
+
+	.module-wrap {
+		background-color: $white;
+	}
+}
+
+.page-cta {
+	
+	.main-nav ul {
+		width: 22rem;
+	}
+
+	.nav-right {
+		justify-content: flex-end;
+		
+		.login {
+			margin-right: 1rem;
+		}
+	}
+}

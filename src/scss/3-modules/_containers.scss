@@ -1,0 +1,82 @@
+/* General Wraps ------------------ */
+
+main {
+	padding-top: 3.7rem;
+}
+
+// Module Wrap -- Sides
+
+.module-wrap {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 $base-line-height;
+
+  	@include media('>small', '<=medium') {
+		padding: 0 $base-line-height * 2;
+	}
+	@include media('>medium', '<=large') {
+		padding: 0 $base-line-height * 3;
+	}
+	@include media('>large') {
+		padding: 0 $base-line-height * 4;
+	}
+
+	.black-bg {
+		background-color: rgba(0, 0, 0, 0.35);
+	}
+	.white-bg {
+		background-color: $white;
+	}
+
+	&:nth-child(2) {
+		background: $black;
+	}
+}
+
+// Modules -- Top & Bottom
+
+.module {
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: $base-line-height * 4 0;
+}
+
+.bg-module {
+	padding: $base-line-height * 4 0;
+	
+	@include media('<=small') {
+		padding: $base-line-height * 2;
+	}
+
+	@include media('>small', '<=large') {
+		padding: $base-line-height * 3;
+	}
+
+	&.black-bg {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+.module.small-width {
+	max-width: 41.956rem;
+}
+
+/* Specific Wraps ------------------ */
+
+// Hero Wrap
+
+.hero-wrap {
+	background: url($path-img + '/hero-cover.png');
+	background-size: cover;
+	background-position: center;
+    height: 45rem;
+	
+	.black-bg {
+		//background-color: rgba(0, 0, 0, 0.35);
+		padding: $base-line-height * 11 $base-line-height * 3;
+	}
+}
+
+
+
+

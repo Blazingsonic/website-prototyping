@@ -1,0 +1,11 @@
+.header {
+	position: fixed;
+	z-index: 120;
+	width: 100%;
+	padding: 1rem $base-line-height * 4;
+	background: $black;
+	
+	@include media('<small') {
+			padding: $base-line-height / 2 $base-line-height * 2;
+		}
+}
