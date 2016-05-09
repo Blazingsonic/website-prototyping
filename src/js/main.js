@@ -1,18 +1,49 @@
 // ==========================================================================
-// General Functions
+// Variables
 // ==========================================================================
 
-// Global Variables
+// General
 
 var isScrolling = false;
 var menuOpen = false;
 
-// Tests
+// URL
 
 var currentUrl = document.location.pathname.match(/[^\/]+$/)[0];
+
+// Offsets
+
+// index.html
+
+if (currentUrl === 'index.html') {
+	var vrOffset = $('#vr').offset().top - 60;
+	var vorteileOffset = $('#vorteile').offset().top - 60;
+	var erlebnisOffset = $('#erlebnis').offset().top - 60;
+	var ctaOffset = $('#cta').offset().top - 60;
+}
+
+// cta.html
+
+if (currentUrl === 'cta.html') {
+	var interesseOffset = $('#interesse').offset().top - 60;
+	var commerceOffset = $('#commerce').offset().top - 60;
+	var factsOffset = $('#facts').offset().top - 80;
+	var contactOffset = $('#contact').offset().top - 80;
+}
+
+// ==========================================================================
+// Tests
+// ==========================================================================
+
 console.log(currentUrl);
 
+console.log(vrOffset);
+
 console.log('This is a test');
+
+// ==========================================================================
+// SVG
+// ==========================================================================
 
 // Load SVG sprite
 
@@ -23,6 +54,10 @@ $.get("img/sprite/svg.svg", function(data) {
 	document.body.insertBefore(div, document.body.childNodes[0]);
 });
 
+// ==========================================================================
+// Grid
+// ==========================================================================
+
 // Add click to grid button
 
 $(document).ready(function() {
@@ -31,7 +66,11 @@ $(document).ready(function() {
 	});
 });
 
+// ==========================================================================
 // Smoothscroll
+// ==========================================================================
+
+// Initialize all links with smoothscroll
 
 $('a').smoothScroll({
 	beforeScroll: function() {
@@ -45,7 +84,11 @@ $('a').smoothScroll({
 	}
 );
 
-// Navigation Hint
+// ==========================================================================
+// Navigation
+// ==========================================================================
+
+// Change active class on click event on main nav items
 
 $(document).ready(function(){
 	$('.main-nav li').click(function() {
@@ -59,39 +102,38 @@ $(document).ready(function(){
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
 
-    // Do something
     console.log(scroll);
 
     if (isScrolling == false) {
 
     	if (currentUrl === 'index.html') {
 
-    		if (scroll < 599) { // First section
+    		if (scroll < vrOffset - 1) { // First section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(1)').addClass('active');
-		    } else if (scroll >= 599 && scroll < 2266) { // Second section
+		    } else if (scroll >= vrOffset && scroll < erlebnisOffset) { // Second section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(2)').addClass('active');
-		    } else if (scroll >= 2266 && scroll < 3085) { // Third section
+		    } else if (scroll >= erlebnisOffset && scroll < ctaOffset) { // Third section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(3)').addClass('active');
-		    } else if (scroll >= 3085) { // Fourth section
+		    } else if (scroll >= ctaOffset) { // Fourth section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(4)').addClass('active');
 		    }
 
     	} else if (currentUrl === 'cta.html') {
 
-    		if (scroll < 635) { // First section
+    		if (scroll < commerceOffset - 1) { // First section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(1)').addClass('active');
-		    } else if (scroll >= 635 && scroll < 1943) { // Second section
+		    } else if (scroll >= commerceOffset && scroll < factsOffset) { // Second section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(2)').addClass('active');
-		    } else if (scroll >= 1943 && scroll < 2471) { // Third section
+		    } else if (scroll >= factsOffset && scroll < contactOffset) { // Third section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(3)').addClass('active');
-		    } else if (scroll >= 2471) { // Fourth section
+		    } else if (scroll >= contactOffset) { // Fourth section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(4)').addClass('active');
 		    }
@@ -127,28 +169,16 @@ $(document).ready(function() {
 });
 
 // ==========================================================================
+// Form interactions
+// ==========================================================================
+
+// Send form interaction
+
+// ==========================================================================
 // Animations
 // ==========================================================================
 
-/* Parallax Rocket -------------------- */
-
-// Controller
-
-// $(function() {
-//   var controller = new ScrollMagic.Controller();
-
-//   var blockTween = new TweenMax.to('#test-animate a', 1.5, {
-//     color: 'red'
-//   });
-
-//   var containerScene = new ScrollMagic.Scene({
-//       triggerElement: '#container'
-//     })
-//     .setTween(blockTween)
-//     .addTo(controller);
-// });
-
-/* Menu -------------------- */
+// Animate menu icon on click
 
 $('.menu').click(function() {
 	$('.menu span:nth-child(2)').toggleClass('transparent');
