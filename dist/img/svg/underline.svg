@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="underline" x="0" y="0" viewBox="0 0 259.3 8.6">
-  <path id="underline-right" class="st0" fill="#fff" d="M111.2 8.6H1.6C0.7 8.6 0 7.9 0 7V1.6C0 0.7 0.7 0 1.6 0h109.6c0.9 0 1.6 0.7 1.6 1.6V7C112.9 7.9 112.1 8.6 111.2 8.6z"/>
-  <rect id="underline-dot" x="125.3" class="st0" fill="#fff" width="8.9" height="8.6"/>
-  <path id="underline-left" class="st0" fill="#fff" d="M257.7 8.6H148.1c-0.9 0-1.6-0.7-1.6-1.6V1.6c0-0.9 0.7-1.6 1.6-1.6h109.6c0.9 0 1.6 0.7 1.6 1.6V7C259.3 7.9 258.6 8.6 257.7 8.6z"/>
-</svg>

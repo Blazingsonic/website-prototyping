@@ -1,259 +1,226 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Firecode Project 1</title>
+	<title>Oculus - Experience Travel</title>
 
 	<link rel="stylesheet" href="css/app.min.css">
 
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 </head>
 <body> 
-    
+
 	<div class="gridlover-grid"></div>
 	<div class="show-grid-button">GRID</div>
 
-	<header class="header">
-		<div class="hero-container">
-			<svg class="hero" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 564 331.1">
-				<use xlink:href="#hero"></use>
-			</svg>
-		</div>
+	<!-- Pushy Menu -->
+	<nav class="pushy pushy-right">
+	    <ul>
+	        <li class="pushy-link hide-desktop"><a href="#start">Start</a></li>
+        	<li class="pushy-link hide-desktop"><a href="#vr">VR</a></li>
+        	<li class="pushy-link hide-desktop"><a href="#erlebnis">Erlebnis</a></li>
+        	<li class="pushy-link hide-desktop"><a href="#cta">Reisen</a></li>
+        	<li class="pushy-link hide-desktop"><a href="#">Login</a></li>
+        	<li class="pushy-link"><a href="#">Video-Portal</a></li>
+	    </ul>
+	</nav>
 
-		<nav class="main-nav">
-			<ul class="row center-xs">
-				<li class="col-xs-3"><a href="#">LOGO</a></li>
-				<li class="col-xs-3 active"><a href="#">Work</a></li>
-				<li class="col-xs-3"><a href="#">About</a></li>
-				<li class="col-xs-3"><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+	<!-- Site Overlay -->
+	<div class="site-overlay remodal-bg"></div>
 
-	<main>
-		<!-- Begin Work -->
-		<section class="container">
-			<div class="module work">
-				<div class="row center-xs">
-					<svg class="sub-icon telescope">
-						<use xlink:href="#telescope"></use>
-					</svg>
-					<h2 class="col-xs-12">Work</h2>
-					<div class="col-xs-12 selection-buttons">
-						<button>Behance</button>
-						<button>Dribbble</button>
-					</div>
-				</div>
-				<section class="row projects">
-					<article class="col-xs-12 col-sm-6 col-md-4">
-						<div class="project">
-							<img src="img/bear.jpg" alt="">
-							<div class="project-bottom">
-								<h3>PROJECT</h3>
-								<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and thereing me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there..</p>
-							</div>
-						</div>
-					</article>
-					<article class="col-xs-12 col-sm-6 col-md-4">
-						<div class="project">
-							<img src="img/bear.jpg" alt="">
-							<div class="project-bottom">
-								<h3>PROJECT</h3>
-								<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and thereing me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there..</p>
-							</div>
-						</div>
-					</article>
-					<article class="col-xs-12 col-sm-6 col-md-4">
-						<div class="project">
-							<img src="img/bear.jpg" alt="">
-							<div class="project-bottom">
-								<h3>PROJECT</h3>
-								<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and thereing me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there..</p>
-							</div>
-						</div>
-					</article>
-					<article class="col-xs-12 col-sm-6 col-md-4">
-						<div class="project">
-							<img src="img/bear.jpg" alt="">
-							<div class="project-bottom">
-								<h3>PROJECT</h3>
-								<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and thereing me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there..</p>
-							</div>
-						</div>
-					</article>
-					<article class="col-xs-12 col-sm-6 col-md-4">
-						<div class="project">
-							<img src="img/bear.jpg" alt="">
-							<div class="project-bottom">
-								<h3>PROJECT</h3>
-								<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and thereing me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there..</p>
-							</div>
-						</div>
-					</article>
-					<article class="col-xs-12 col-sm-6 col-md-4">
-						<div class="project">
-							<img src="img/bear.jpg" alt="">
-							<div class="project-bottom">
-								<h3>PROJECT</h3>
-								<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and thereing me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there..</p>
-							</div>
-						</div>
-					</article>
-				</section>
-			</div>
-		</section>
-		<!-- End Work -->
+	<!-- Beginn Container -->
+	<div id="container">
 		
-		<!-- Begin Testimonials -->
-		<section class="container">
-			<div class="module small-width testimonials">
-				<div class="row center-xs">
-					<h2 class="col-xs-12 underline">Testimonials</h2>
-					<svg class="col-xs-12 twitter-testimonials">
-						<use xlink:href="#twitter"></use>
-					</svg>
-					<div class="col-xs-12">
-						<div class="row center-xs">
-							<span class="slider-circle active"></span>
-							<span class="slider-circle"></span>
-							<span class="slider-circle"></span>
-							<span class="slider-circle"></span>
-							<span class="slider-circle"></span>
-						</div>
-					</div>
-					<p class="col-xs-12">"Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it?"</p>
-					<p class="col-xs-12 quote">Old client GHumor</p>
-				</div>
-			</div>
-		</section>
-		<!-- End Testimonials -->
+		<header class="header">
 
-		<!-- Begin Profle -->
-		<section class="container profile-background">
-			<div class="module profile">
-				<div class="row center-xs profile-overview">
-					<svg class="sub-icon astronaut">
-						<use xlink:href="#astronaut"></use>
+			<nav class="main-nav">
+				<a href="index.html" class="logo-wrap">
+					<svg class="logo">
+						<use xlink:href="#logo"></use>
 					</svg>
-					<h2 class="col-xs-12 red-underline">About</h2>
-					<svg class="profile-img">
-						<use xlink:href="#profile-img"></use>
-					</svg>
-					<p class="col-xs-12 name">Sebastian Saier</p>
-					<div class="col-xs-12 info-hints">
-						<div class="row center-xs middle-xs">
-							<svg class="small-icon">
-								<use xlink:href="#twitter">
-							</svg>
-							<span>Location</span>
-						</div>
-					</div>
-					<div class="col-xs-12">
-						<div class="row center-xs middle-xs">
-							<svg class="small-icon">
-								<use xlink:href="#twitter">
-							</svg>
-							<span>Location</span>
-						</div>
-					</div>
+					<p>/ Experience <span>TRAVEL</span></p>
+				</a>
+				<ul class="hide-tablet">
+					<li class="active"><a href="#start">Start</a></li>
+					<li><a href="#vr">VR</a></li>
+					<li><a href="#erlebnis">ERLEBNIS</a></li>
+					<li><a href="#cta">REISEN</a></li>
+				</ul>
+				<div class="nav-right">
+					<a href="cta.html"><button class="btn-light">Demo buchen</button></a>
+					<a class="hide-tablet" href="#search">LOGIN</a>			
+					<a class="menu menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
 				</div>
+			</nav>
 
-				<div class="row">
-					<h3 class="col-xs-12">Introduction</h3>
-					<p class="col-xs-12 secondary">My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker.</p>
-					<h3 class="col-xs-12">Software</h3>
-					<div class="col-xs-12">
-						<div class="row">
-							<div class="skills item">Ps</div>
-							<div class="skills item">Ai</div>
-							<div class="skills item">Id</div>
-							<div class="skills item">P</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Profile -->
+		</header>
 
-		<!-- Begin Services -->
-		<section class="container">
-			<div class="module small-width servies">
-				<div class="row center-xs">
-					<h2 class="col-xs-12 underline">Services</h2>
-					<div class="col-xs-12">
-						<div class="row center-xs service-items">
-							<div class="text-center item">
-								<img class="service-item" src="img/svg/stamp.svg" alt="Stamp Icon">
-								<p class="secondary">Logo and Branding</p>
-							</div>
-							<div class="text-center item">
-								<img class="service-item" src="img/svg/layout.svg" alt="Layout Icon">
-								<p class="secondary">Logo and Branding</p>
-							</div>
-							<div class="text-center item">
-								<img class="service-item" src="img/svg/paper.svg" alt="Paper Icon">
-								<p class="secondary">Logo and Branding</p>
-							</div>
-						</div>
-					</div>
-					<p class="tertiary">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out.</p>
-				</div>
-			</div>
-		</section>
-		<!-- End Services -->
+		<main>
 
-		<!-- Begin Contact -->
-		<section class="container contact-background">
-			<div class="module small-width contact">
-				<div class="row center-xs">
-					<svg class="sub-icon">
-						<use xlink:href="#signal"></use>
-					</svg>
-					<h2 class="col-xs-12 red-underline">Contact</h2>
-					<p class="col-xs-12 secondary">Skye: username</p>
-					<p class="col-xs-12 secondary">Email: user@email.com</p>
+			<!-- Begin Hero -->
+			<div id="start" class="hero-wrap white">
+
+				<div class="black-bg">
 					
-					<!-- Begin Contact Form -->
-					<div class="col-xs-12 form-wrap">
-						<form action="#" class="row center-xs">
-							<div class="col-xs-12 col-sm-6">
-								<input type="text" placeholder="Your email...">
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<input type="text" placeholder="Object...">
-							</div>
-							<div class="col-xs-12">
-								<textarea cols="30" rows="10">Message...</textarea>
-							</div>
-							<button type="submit">Send</button>
-						</form>
-					</div>
-					<!-- End Contact Form -->
-				</div>
-			</div>
-		</section>
-		<!-- End Contact -->
-	</main>
+					<article class="hero-module text-center">
+						<h1>Erleben. Wie nie zuvor.</h1>
+						<p class="centered mw-small">Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang our with friends in VR. Endless worlds await.</p>
+						<button class="btn-light">Film ansehen</button>
+					</article>
 
-	<footer class="row center-xs middle-xs">
-			<svg class="tiny-icon twitter-footer">
-				<use xlink:href="#twitter-footer"></use>
-			</svg>
-			<svg class="tiny-icon twitter-footer">
-				<use xlink:href="#twitter-footer"></use>
-			</svg>
-			<svg class="tiny-icon twitter-footer">
-				<use xlink:href="#twitter-footer"></use>
-			</svg>
-			<svg class="tiny-icon twitter-footer">
-				<use xlink:href="#twitter-footer"></use>
-			</svg>
-			<svg class="tiny-icon twitter-footer">
-				<use xlink:href="#twitter-footer"></use>
-			</svg>
-			<svg class="tiny-icon twitter-footer">
-				<use xlink:href="#twitter-footer"></use>
-			</svg>
-	</footer>
+				</div>
+
+			</div>
+			<!-- End Hero -->
+
+			<!-- Begin Featured Content -->
+			<div id="vr" class="module-wrap white-bg white">
+				<article class="module text-center">
+					<div class="bg-module featured-content">
+						<h3>Virtual Reality</h3>
+						<h2>Erleben Sie Oculus</h2>
+						<svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.07 314.06"><!-- use elements can not be adressed through mouse events, so we have to include the svg directly inline -->
+							<title>play</title>
+							<circle id="play-ellipse" cx="157.03" cy="157.03" r="146.29" opacity="0" fill="#fff"/>
+							<path id="play-border" d="M293,78.53A157,157,0,1,0,235.53,293,157,157,0,0,0,293,78.53ZM157,303.32A146.29,146.29,0,1,1,303.32,157,146.29,146.29,0,0,1,157,303.32Z" transform="translate(0 0)" fill="#fff"/>
+							<path id="play-button" d="M131.34,102.7c-7.49-4.37-13.53-.88-13.49,7.79l0.42,95.17c0,8.66,6.16,12.19,13.67,7.85l81.59-47.1c7.51-4.33,7.52-11.39,0-15.76Z" transform="translate(0 0)" fill="#fff"/>
+						</svg>
+					</div>
+				</article>
+			</div>
+			<!-- End Featured Content -->
+
+			<!-- Begin Vorteile -->
+			<div id="vorteile" class="module-wrap black">
+				<article class="module vorteile text-center">
+					<h2>Ihre Vorteile</h2>
+					<p class="centered mw-small">Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang our with friends in VR. Endless worlds await.</p>
+					<section class="row vorteile-journey-wrap">
+						<article class="col-xs-12 col-sm-6 col-md-4 vorteil">
+							<div class="rounded-icon-default">
+								<img src="img/svg/speech.svg" alt="monitor-icon">
+								<span class="vorteil-number-bottom">1</span>
+							</div>
+							<h3>Spricht sich rum</h3>
+							<p class="small mw-small">Attend talks from industry leaders pushing the cutting edge, and learn about the latest advantsments in the field</p>
+						</article>
+						<article class="col-xs-12 col-sm-6 col-md-4 vorteil">
+							<div class="rounded-icon-default">
+								<img src="img/svg/monitor.svg" alt="monitor-icon">
+								<span class="vorteil-number-bottom">2</span>
+							</div>
+							<h3>Läuft auf ihren bestehenden Rechnern</h3>
+							<p class="small mw-small">Attend talks from industry leaders pushing the cutting edge, and learn about the latest advantsments in the field</p>
+						</article>
+						<article class="col-xs-12 col-sm-6 col-md-4 vorteil">
+							<div class="rounded-icon-default">
+								<img src="img/svg/like.svg" alt="monitor-icon">
+								<span class="vorteil-number-bottom">3</span>
+							</div>
+							<h3>Beeindruckende Technik</h3>
+							<p class="small mw-small">Attend talks from industry leaders pushing the cutting edge, and learn about the latest advantsments in the field</p>
+						</article>
+						<article class="col-xs-12 col-sm-6 col-md-4 vorteil">
+							<div class="rounded-icon-default">
+								<img src="img/svg/headphones.svg" alt="monitor-icon">
+								<span class="vorteil-number-bottom">4</span>
+							</div>
+							<h3>Immersive Erfahrung</h3>
+							<p class="small mw-small">Attend talks from industry leaders pushing the cutting edge, and learn about the latest advantsments in the field</p>
+						</article>
+						<article class="col-xs-12 col-sm-6 col-md-4 vorteil">
+							<div class="rounded-icon-default">
+								<img src="img/svg/camera.svg" alt="monitor-icon">
+								<span class="vorteil-number-bottom">5</span>
+							</div>
+							<h3>Bildgewaltig & Beeindruckend</h3>
+							<p class="small mw-small">Attend talks from industry leaders pushing the cutting edge, and learn about the latest advantsments in the field</p>
+						</article>
+						<article class="col-xs-12 col-sm-6 col-md-4 vorteil">
+							<div class="rounded-icon-default">
+								<img src="img/svg/settings.svg" alt="monitor-icon">
+								<span class="vorteil-number-bottom">6</span>
+							</div>
+							<h3>Modular & Erweiterbar</h3>
+							<p class="small mw-small">Attend talks from industry leaders pushing the cutting edge, and learn about the latest advantsments in the field</p>
+						</article>
+					</section>
+				</article>
+			</div>
+			<!-- End Vorteile -->
+
+			<!-- Begin Erlebnis -->
+			<div id="erlebnis" class="erlebnis white">
+
+				<div class="bg-module black-bg">
+					
+					<article class="text-center">
+						<h2>Das Erlebnis</h2>
+						<p class="centered mw-small">Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang our with friends in VR. Endless worlds await.</p>
+						<a data-remodal-target="modal"><svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.07 314.06"><!-- use elements can not be adressed through mouse events, so we have to include the svg directly inline -->
+							<title>play</title>
+							<circle id="play-ellipse" cx="157.03" cy="157.03" r="146.29" opacity="0" fill="#fff"/>
+							<path id="play-border" d="M293,78.53A157,157,0,1,0,235.53,293,157,157,0,0,0,293,78.53ZM157,303.32A146.29,146.29,0,1,1,303.32,157,146.29,146.29,0,0,1,157,303.32Z" transform="translate(0 0)" fill="#fff"/>
+							<path id="play-button" d="M131.34,102.7c-7.49-4.37-13.53-.88-13.49,7.79l0.42,95.17c0,8.66,6.16,12.19,13.67,7.85l81.59-47.1c7.51-4.33,7.52-11.39,0-15.76Z" transform="translate(0 0)" fill="#fff"/>
+						</svg></a>
+					</article>
+
+					<div class="remodal" data-remodal-id="modal">
+						<button data-remodal-action="close" class="remodal-close"></button>
+					  	<div class="yt-video">
+					  		<div class="yt-video-controls"></div>
+					  	</div>
+						<h3>Reiseorte hautnah erleben</h3>
+						<p class="centered">Ein Bild sagt mehr als tausend Worte? Richtig, aber VR lässt Ihre Kundschaft Reiseziele auf unvergleichbare Weise selbst erleben. Als wäre man wirklich dort!</p>
+						<button class="btn-tertiary">Verkauf steigern</button>
+					</div>
+
+					<div class="oculus-woman centered"></div>
+
+				</div>
+				
+			</div>
+			<!-- End Erlebnis -->
+
+			<!-- Begin CTA Demo -->
+			<div id="cta" class="module-wrap black">
+				
+				<div class="module cta-demo">
+				
+					<article class="text-center">
+						<h2>Buchen Sie noch heute Ihre Demo vor Ort!</h2>
+						<p class="centered mw-small">Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang our with friends in VR. Endless worlds await.</p>
+						<a href="cta.html">
+							<button class="btn-big">Los Geht's!</button>
+						</a>
+						<p class="small">/ MEHR <span>INFORMATIONEN</span></p>
+					</article>
+
+					<div class="oculus-man centered"></div>
+
+				</div>
+
+			</div>
+
+			<div class="devices-wrap">
+				<div class="devices"></div>
+			</div>
+
+			<!-- End CTA Demo -->
+
+		</main>
+
+		<footer></footer>
+
+	</div>
+	<!-- End Container -->
     
 	<script src="js/app.min.js"></script>
     

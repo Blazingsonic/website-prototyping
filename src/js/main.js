@@ -9,6 +9,9 @@ var menuOpen = false;
 
 // Tests
 
+var currentUrl = document.location.pathname.match(/[^\/]+$/)[0];
+console.log(currentUrl);
+
 console.log('This is a test');
 
 // Load SVG sprite
@@ -51,6 +54,8 @@ $(document).ready(function(){
 	});
 });
 
+// Adjust current nav item according to window height
+
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
 
@@ -59,19 +64,39 @@ $(window).scroll(function (event) {
 
     if (isScrolling == false) {
 
-    	if (scroll < 599) { // First section
-	    	$('.main-nav li').removeClass('active');
-	    	$('.main-nav li:nth-child(1)').addClass('active');
-	    } else if (scroll >= 599 && scroll < 2266) { // Second section
-	    	$('.main-nav li').removeClass('active');
-	    	$('.main-nav li:nth-child(2)').addClass('active');
-	    } else if (scroll >= 2266 && scroll < 3085) { // Third section
-	    	$('.main-nav li').removeClass('active');
-	    	$('.main-nav li:nth-child(3)').addClass('active');
-	    } else if (scroll >= 3085) { // Fourth section
-	    	$('.main-nav li').removeClass('active');
-	    	$('.main-nav li:nth-child(4)').addClass('active');
-	    }
+    	if (currentUrl === 'index.html') {
+
+    		if (scroll < 599) { // First section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(1)').addClass('active');
+		    } else if (scroll >= 599 && scroll < 2266) { // Second section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(2)').addClass('active');
+		    } else if (scroll >= 2266 && scroll < 3085) { // Third section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(3)').addClass('active');
+		    } else if (scroll >= 3085) { // Fourth section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(4)').addClass('active');
+		    }
+
+    	} else if (currentUrl === 'cta.html') {
+
+    		if (scroll < 635) { // First section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(1)').addClass('active');
+		    } else if (scroll >= 635 && scroll < 1943) { // Second section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(2)').addClass('active');
+		    } else if (scroll >= 1943 && scroll < 2471) { // Third section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(3)').addClass('active');
+		    } else if (scroll >= 2471) { // Fourth section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(4)').addClass('active');
+		    }
+
+    	}
 
     }
 });
