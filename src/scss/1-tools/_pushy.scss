@@ -55,7 +55,11 @@
   transform: translate3d(200px, 0, 0);
 }
 
-.pushy-open-right #container,
+// Puhsy menu changes
+.pushy-open-right #container {
+  margin-right: 200px;
+}
+
 .pushy-open-right .push {
   -webkit-transform: translate3d(-200px, 0, 0);
   -ms-transform: translate3d(-200px, 0, 0);

@@ -174,6 +174,42 @@ $(document).ready(function() {
 
 // Send form interaction
 
+$(document).ready(function() {
+	$('.btn-fake-submit').click(function() {
+		$('.contact').hide();
+
+		$('#contact').scrollView();
+
+		var $recipeHeading = $('.recipe h2');
+		var $recipeParagraph = $('.recipe p');
+		var $recipeImg = $('.recipe div');
+		var $recipeBtn = $('.recipe button');
+		TweenMax.set($recipeHeading, {opacity: 0});
+		TweenMax.set($recipeParagraph, {opacity: 0});
+		TweenMax.set($recipeImg, {opacity: 0});
+		TweenMax.set($recipeBtn, {y: '+=20', opacity: 0});
+		TweenMax.to($recipeHeading, 1, {opacity: 1});
+		TweenMax.to($recipeParagraph, 1, {opacity: 1}, 0);
+		TweenMax.to($recipeImg, 1, {opacity: 1}, 0);
+		TweenMax.to($recipeBtn, 0.5, {y: '0', opacity: 1});
+		$('.recipe').show();
+	});
+});
+
+// ==========================================================================
+// Helper Functions
+// ==========================================================================
+
+// Scrolling function
+
+$.fn.scrollView = function () {
+  return this.each(function () {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 700);
+  });
+}
+
 // ==========================================================================
 // Animations
 // ==========================================================================
@@ -199,6 +235,61 @@ $('.pushy-link').click(function() {
 	$('.menu span:nth-child(1)').toggleClass('rotate-top');
 	$('.menu span:nth-child(3)').toggleClass('rotate-bottom');
 });
+
+// Animate vorteile from left to right
+
+var $vorteil = $('.vorteil');
+var vorteilFlag = false;
+TweenMax.set($vorteil, {x: '-=50', opacity: 0});
+
+$(window).scroll(function (event) {
+	var scroll = $(window).scrollTop();
+	if (scroll > vorteileOffset && vorteilFlag == false) {
+		TweenMax.staggerTo($vorteil, 1,  {x: '0', opacity: 1}, 0.25);
+		vorteilFlag = true;
+	}
+});
+
+// Animate commerce steps from left to right
+
+var $cStepAll = $('.commerce-journey-step');
+var $cStepOdd = $('.commerce-journey-step:nth-child(odd)');
+var $cStepEven = $('.commerce-journey-step:nth-child(even)');
+var stepFlag = false;
+TweenMax.set($cStepOdd, {x: '-=50', opacity: 0});
+TweenMax.set($cStepEven, {x: '+=50', opacity: 0});
+
+$(window).scroll(function (event) {
+	var scroll = $(window).scrollTop();
+	if (scroll > commerceOffset && stepFlag == false) {
+		TweenMax.staggerTo($cStepAll, 1,  {x: '0', opacity: 1}, 0.25);
+		stepFlag = true;
+	}
+});
+
+// Animate facts from left to right
+
+var $fact = $('.fl-item');
+var factFlag = false;
+TweenMax.set($fact, {y: '+=50', opacity: 0});
+
+$(window).scroll(function (event) {
+	var scroll = $(window).scrollTop();
+	if (scroll > factsOffset - 90 && factFlag == false) {
+		TweenMax.staggerTo($fact, 1,  {y: '0', opacity: 1}, 0.25);
+		stepFlag = true;
+	}
+});
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -4,8 +4,13 @@
 	width: 100%;
 	padding: 1rem $base-line-height * 4;
 	background: $black;
+	animation: fade 500ms;
 	
 	@include media('<small') {
-			padding: $base-line-height / 2 $base-line-height * 2;
-		}
+		padding: $base-line-height / 2 $base-line-height * 2;
+	}
+}
+
+.pushy-open-right .header {
+	right: 200px;
 }

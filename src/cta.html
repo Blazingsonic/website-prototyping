@@ -187,12 +187,12 @@
 					<h2>Kontaktieren Sie uns!</h2>
 					<p class="centered mw-small">Füllen Sie einfach die folgenden Felder aus und wir melden uns umgehend mit mehr Informationen bei Ihnen. Ganz unverbindlich.</p>
 
-					<form action="#" class="form-contact mw-small centered">
+					<form action="javascript:myFunction(); return false;" class="form-contact mw-small centered">
 						<input type="text" placeholder="IHR NAME">
 						<input type="text" placeholder="IHR UNTERNEHMEN">
 						<input type="email" placeholder="E-MAIL-ADRESSE">
 						<input type="number" placeholder="TELEFONNUMMER">
-						<textarea rows="4" cols="50">Ihr Nachricht</textarea>
+						<textarea rows="4" cols="50" placeholder="IHRE NACHRICHT"></textarea>
 						<fieldset>
 							<div class="form-checkbox">
 								<input type="radio" name="action" value="callback"><span>ICH BITTE UM RÜCKRUF</span><br>
@@ -201,8 +201,16 @@
 								<input type="radio" name="action" value="accept"><span>ICH AKZEPTIERE DIE <span class="light">ABG</span> & <span class="light">DATENSCHUTZVERORDNUNG</span></span><br>
 							</div>
 						</fieldset>
-						<button class="btn-dark" type="submit">ABSENDEN</button>
+						<button class="btn-dark btn-fake-submit" type="submit">ABSENDEN</button>
 					</form>
+				</article>
+
+				<article class="module recipe text-center">
+					<h2>Vielen Dank für Ihre Anfrage!</h2>
+					<p class="centered mw-small">Füllen Sie einfach die folgenden Felder aus und wir melden uns umgehend mit mehr Informationen bei Ihnen. Ganz unverbindlich.</p>
+					<div class="oculus-man centered"></div>
+					<button class="btn-dark">Weitere Informationen</button>
+					<button class="btn-dark">Tutorials</button>
 				</article>
 
 			</div>

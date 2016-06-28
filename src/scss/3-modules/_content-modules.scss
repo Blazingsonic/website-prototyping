@@ -45,6 +45,7 @@
 	margin-top: $base-line-height * 2;
 	
 	.vorteil {
+		position: relative;
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: center;
@@ -200,6 +201,7 @@
 	margin-top: $base-line-height * 4;
 	
 	.commerce-journey-step {
+		position: relative;
 		display: flex;
 		align-items: center;
 		margin-bottom: $base-line-height * 2;
@@ -260,6 +262,14 @@ section.facts-list {
 	
 	form {
 		margin-top: $base-line-height * 4;
+	}
+}
+
+.recipe {
+	display: none;
+	
+	button {
+		margin-top: $base-line-height;
 	}
 }
 

@@ -26,13 +26,14 @@ input, textarea {
 	@include type-setting(-2);
 	background-color: #ccc;
 	border: none;
-	padding: 1.5rem;
+	//padding: 1.5rem; // this causes bug in firefox
 	width: 100%;
 	border-radius: 1.5rem;
+	padding-left: $base-line-height;
 }
 
 input {
-	height: $base-line-height;
+	height: $base-line-height * 2;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -40,6 +41,10 @@ input[type="checkbox"], input[type="radio"] {
 	height: 1rem;
 	margin-bottom: 0;
 	margin-right: $base-line-height / 2;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 .form-checkbox {
