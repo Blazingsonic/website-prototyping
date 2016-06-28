@@ -15,7 +15,7 @@ var currentUrl = document.location.pathname.match(/[^\/]+$/)[0];
 
 // index.html
 
-if (currentUrl === 'index.html') {
+if (currentUrl === 'index.html' || currentUrl === '') {
 	var vrOffset = $('#vr').offset().top - 60;
 	var vorteileOffset = $('#vorteile').offset().top - 60;
 	var erlebnisOffset = $('#erlebnis').offset().top - 60;

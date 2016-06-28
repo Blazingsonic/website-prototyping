@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, hgroup, p {
 
 h1 {
 	@include type-setting(6);
-	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-family: 'museo-sans', Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	letter-spacing: 0.2rem;
 	color: $color-text-light;

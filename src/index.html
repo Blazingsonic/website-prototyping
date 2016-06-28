@@ -8,7 +8,8 @@
 	<!-- endbuild -->
 
 	<!-- Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+	<script src="https://use.typekit.net/nfv8qkn.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
@@ -74,7 +75,7 @@
 					<article class="hero-module text-center">
 						<h1>Erleben. Wie nie zuvor.</h1>
 						<p class="centered mw-small">Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang our with friends in VR. Endless worlds await.</p>
-						<button class="btn-light">Film ansehen</button>
+						<a href="#vr"><button class="btn-light">Film ansehen</button></a>
 					</article>
 
 				</div>
@@ -88,13 +89,22 @@
 					<div class="bg-module featured-content">
 						<h3>Virtual Reality</h3>
 						<h2>Erleben Sie Oculus</h2>
-						<svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.07 314.06"><!-- use elements can not be adressed through mouse events, so we have to include the svg directly inline -->
+						<svg data-remodal-target="modal-1" class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.07 314.06"><!-- use elements can not be adressed through mouse events, so we have to include the svg directly inline -->
 							<title>play</title>
 							<circle id="play-ellipse" cx="157.03" cy="157.03" r="146.29" opacity="0" fill="#fff"/>
 							<path id="play-border" d="M293,78.53A157,157,0,1,0,235.53,293,157,157,0,0,0,293,78.53ZM157,303.32A146.29,146.29,0,1,1,303.32,157,146.29,146.29,0,0,1,157,303.32Z" transform="translate(0 0)" fill="#fff"/>
 							<path id="play-button" d="M131.34,102.7c-7.49-4.37-13.53-.88-13.49,7.79l0.42,95.17c0,8.66,6.16,12.19,13.67,7.85l81.59-47.1c7.51-4.33,7.52-11.39,0-15.76Z" transform="translate(0 0)" fill="#fff"/>
 						</svg>
 					</div>
+
+					<div class="remodal" data-remodal-id="modal-1">
+						<button data-remodal-action="close" class="remodal-close"></button>
+					  	<iframe width="700" height="315" src="https://www.youtube.com/embed/fHpxcCeK1vs" frameborder="0" allowfullscreen></iframe>
+						<h3>Eine einzigartige Erfahrung</h3>
+						<p class="centered">Die Virtual Reality Brille wird Ihre Kunden begeistern. Vorbei ist die Zeit von uninteressanten Flyern und Prospekten. Mit Oculus erleben Sie alles hautnah! </p>
+						<a href="cta.html"><button class="btn-tertiary">Jetzt ausprobieren</button></a>
+					</div>
+
 				</article>
 			</div>
 			<!-- End Featured Content -->
@@ -166,7 +176,7 @@
 					<article class="text-center">
 						<h2>Das Erlebnis</h2>
 						<p class="centered mw-small">Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang our with friends in VR. Endless worlds await.</p>
-						<a data-remodal-target="modal"><svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.07 314.06"><!-- use elements can not be adressed through mouse events, so we have to include the svg directly inline -->
+						<a data-remodal-target="modal-2"><svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 314.07 314.06"><!-- use elements can not be adressed through mouse events, so we have to include the svg directly inline -->
 							<title>play</title>
 							<circle id="play-ellipse" cx="157.03" cy="157.03" r="146.29" opacity="0" fill="#fff"/>
 							<path id="play-border" d="M293,78.53A157,157,0,1,0,235.53,293,157,157,0,0,0,293,78.53ZM157,303.32A146.29,146.29,0,1,1,303.32,157,146.29,146.29,0,0,1,157,303.32Z" transform="translate(0 0)" fill="#fff"/>
@@ -174,14 +184,12 @@
 						</svg></a>
 					</article>
 
-					<div class="remodal" data-remodal-id="modal">
+					<div class="remodal" data-remodal-id="modal-2">
 						<button data-remodal-action="close" class="remodal-close"></button>
-					  	<div class="yt-video">
-					  		<div class="yt-video-controls"></div>
-					  	</div>
+					  	<iframe width="700" height="315" src="https://www.youtube.com/embed/4SkHdRvPbv4" frameborder="0" allowfullscreen></iframe>
 						<h3>Reiseorte hautnah erleben</h3>
 						<p class="centered">Ein Bild sagt mehr als tausend Worte? Richtig, aber VR lässt Ihre Kundschaft Reiseziele auf unvergleichbare Weise selbst erleben. Als wäre man wirklich dort!</p>
-						<button class="btn-tertiary">Verkauf steigern</button>
+						<a href="cta.html"><button class="btn-tertiary">Verkauf steigern</button></a>
 					</div>
 
 					<div class="oculus-woman centered"></div>

@@ -155,7 +155,7 @@ html.remodal-is-locked {
 
 .remodal-close {
   position: absolute;
-  top: 0;
+  top: 59%;
   left: 0;
   z-index: 99;
 
@@ -171,7 +171,7 @@ html.remodal-is-locked {
   transition: color 0.2s;
   text-decoration: none;
 
-  color: $grey-lightest;
+  color: $black;
   border: 0;
   outline: 0;
   background: transparent;
@@ -179,7 +179,7 @@ html.remodal-is-locked {
 
 .remodal-close:hover,
 .remodal-close:focus {
-  color: #2b2e38;
+  color: $grey;
 }
 
 .remodal-close:before {
