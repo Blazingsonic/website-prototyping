@@ -13,7 +13,7 @@ $menu_width: 200px !default;
     height: 100%;
     top: 0;
     z-index: 9999;
-    background: #191918;
+    background: $black;
     overflow: auto;
     visibility: hidden;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
@@ -103,7 +103,7 @@ $menu_width: 200px !default;
     .site-overlay{
         display: block;
         position: fixed;
-        top: 0;
+        top: 4.3rem;
         right: 0;
         bottom: 0;
         left: 0;

@@ -219,23 +219,24 @@ $.fn.scrollView = function () {
 $('.menu').click(function() {
 
 	if (menuOpen) {
-		TweenMax.to($('.header'), 0.2, {x: 0});
+		TweenMax.to($('.header'), 0.17, {x: 0});
 		menuOpen = false;
 	} else {
-		TweenMax.to($('.header'), 0.2, {x: '-=200'});
+		TweenMax.to($('.header'), 0.25, {x: '-=200'}, '+=0.2');
 		menuOpen = true;
 	}
 
 	$('.menu span:nth-child(2)').toggleClass('transparent');
 	$('.menu span:nth-child(1)').toggleClass('rotate-top');
 	$('.menu span:nth-child(3)').toggleClass('rotate-bottom');
+
 });
 
 // Simulate click on icon when other part of screen is clicked
 
 $('.site-overlay').click(function() {
 
-	TweenMax.to($('.header'), 0.2, {x: 0});
+	TweenMax.to($('.header'), 0.17, {x: 0});
 	menuOpen = false;
 
 	$('.menu span:nth-child(2)').toggleClass('transparent');
@@ -245,7 +246,7 @@ $('.site-overlay').click(function() {
 
 $('.pushy-link').click(function() {
 
-	TweenMax.to($('.header'), 0.2, {x: 0});
+	TweenMax.to($('.header'), 0.17, {x: 0});
 	menuOpen = false;
 
 	$('.menu span:nth-child(2)').toggleClass('transparent');

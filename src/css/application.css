@@ -1096,7 +1096,7 @@ th {
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #191918;
+  background: #1c1e20;
   overflow: auto;
   visibility: hidden;
   -webkit-overflow-scrolling: touch;
@@ -1157,7 +1157,7 @@ th {
 .pushy-open-right .site-overlay {
   display: block;
   position: fixed;
-  top: 0;
+  top: 4.3rem;
   right: 0;
   bottom: 0;
   left: 0;
