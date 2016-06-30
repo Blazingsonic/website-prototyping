@@ -22,7 +22,7 @@
 // ==========================================================================
 
 .featured-content {
-	background: url($path-img + '/china.jpeg');
+	background: url($path-img + '/china.jpg');
 	background-size: cover;
 	
 	.play {
@@ -68,7 +68,7 @@
 
 .erlebnis {
 	position: relative;
-	background: url($path-img + '/waterfall.jpeg');
+	background: url($path-img + '/waterfall.jpg');
 	background-size: cover;
 	
 	.bg-module {
@@ -99,7 +99,7 @@
 	position: relative;
 	width: 100%;
 	height: 23rem;
-	background: url($path-img + '/desert.jpeg');
+	background: url($path-img + '/desert.jpg');
 	background-size: 100%;
 	background-position: bottom;
 	
@@ -234,7 +234,7 @@
 // ==========================================================================
 
 #facts {
-	background: url($path-img + '/green-night.jpeg');
+	background: url($path-img + '/green-night.jpg');
 	background-size: cover; // Mixin for background settings?
 }
 
@@ -261,7 +261,7 @@ section.facts-list {
 #contact {
 	
 	form {
-		margin-top: $base-line-height * 4;
+		margin-top: $base-line-height * 3;
 	}
 }
 

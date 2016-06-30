@@ -27,6 +27,10 @@
 				font-weight: bold;
 			}
 		}
+
+		&:hover p {
+			color: $grey-light;
+		}
 	}
 
 	ul {

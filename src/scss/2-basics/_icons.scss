@@ -87,24 +87,27 @@
 	height: 21px;
 	cursor: pointer;
 	
-		span {
-		    background: white;
-		    height: 2px;
-		    width: 27px;
-		    position: absolute;
-		    transition:all 0.5s ease;
-		    
-		    &:first-child {
-		    	top: 0px;
-		    }
-		    &:nth-child(2) {
-		    	top: 8px;
-		    }
-		    &:nth-child(3) {
-		    	top: 16px;
-		    }
-		}
+	span {
+	    background: white;
+	    height: 2px;
+	    width: 27px;
+	    position: absolute;
+	    transition:all 0.5s ease;
+	    
+	    &:first-child {
+	    	top: 0px;
+	    }
+	    &:nth-child(2) {
+	    	top: 8px;
+	    }
+	    &:nth-child(3) {
+	    	top: 16px;
+	    }
+	}
 	
+	&:hover span {
+		background: $grey-light;
+	}
 }
 
 .transparent {

@@ -39,7 +39,7 @@ console.log(currentUrl);
 
 console.log(vrOffset);
 
-console.log('This is a test');
+console.log('This is a test 2');
 
 // ==========================================================================
 // SVG
@@ -145,28 +145,28 @@ $(window).scroll(function (event) {
 
 // Adjust navbar position when pushy is clicked
 
-$(document).ready(function() {
-	$('.menu-btn').click(function() {
-		console.log('menu-btn');
-		var offsetTop = $(window).scrollTop();
+// $(document).ready(function() {
+// 	$('.menu-btn').click(function() {
+// 		console.log('menu-btn');
+// 		var offsetTop = $(window).scrollTop();
 
-		if (!menuOpen) {
-			$('.header').css('top', offsetTop);
-			menuOpen = true;
-		} else if (menuOpen) {
-			$('.header').css('top', 0);
-			menuOpen = false;
-		}
-	});
-	$('#container').click(function() {
-		var offsetTop = $(window).scrollTop();
-		console.log('container');
-		if (menuOpen) {
-			$('.header').css('top', 0);
-			menuOpen = false;
-		}
-	});
-});
+// 		if (!menuOpen) {
+// 			$('.header').css('top', offsetTop);
+// 			menuOpen = true;
+// 		} else if (menuOpen) {
+// 			$('.header').css('top', 0);
+// 			menuOpen = false;
+// 		}
+// 	});
+// 	$('#container').click(function() {
+// 		var offsetTop = $(window).scrollTop();
+// 		console.log('container');
+// 		if (menuOpen) {
+// 			$('.header').css('top', 0);
+// 			menuOpen = false;
+// 		}
+// 	});
+// });
 
 // ==========================================================================
 // Form interactions
@@ -217,6 +217,15 @@ $.fn.scrollView = function () {
 // Animate menu icon on click
 
 $('.menu').click(function() {
+
+	if (menuOpen) {
+		TweenMax.to($('.header'), 0.2, {x: 0});
+		menuOpen = false;
+	} else {
+		TweenMax.to($('.header'), 0.2, {x: '-=200'});
+		menuOpen = true;
+	}
+
 	$('.menu span:nth-child(2)').toggleClass('transparent');
 	$('.menu span:nth-child(1)').toggleClass('rotate-top');
 	$('.menu span:nth-child(3)').toggleClass('rotate-bottom');
@@ -225,12 +234,20 @@ $('.menu').click(function() {
 // Simulate click on icon when other part of screen is clicked
 
 $('.site-overlay').click(function() {
+
+	TweenMax.to($('.header'), 0.2, {x: 0});
+	menuOpen = false;
+
 	$('.menu span:nth-child(2)').toggleClass('transparent');
 	$('.menu span:nth-child(1)').toggleClass('rotate-top');
 	$('.menu span:nth-child(3)').toggleClass('rotate-bottom');
 });
 
 $('.pushy-link').click(function() {
+
+	TweenMax.to($('.header'), 0.2, {x: 0});
+	menuOpen = false;
+
 	$('.menu span:nth-child(2)').toggleClass('transparent');
 	$('.menu span:nth-child(1)').toggleClass('rotate-top');
 	$('.menu span:nth-child(3)').toggleClass('rotate-bottom');

@@ -1101,25 +1101,20 @@ th {
   visibility: hidden;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */ }
-
-.pushy a {
-  display: block;
-  color: #b3b3b1;
-  padding: 15px 30px;
-  text-decoration: none;
-  outline: 0; }
-
-.pushy a:hover {
-  color: #FFF; }
-
-.pushy ul:first-child {
-  margin-top: 10px; }
-
-.pushy.pushy-left {
-  left: 0; }
-
-.pushy.pushy-right {
-  right: 0; }
+  .pushy a {
+    display: block;
+    color: #b3b3b1;
+    padding: 15px 30px;
+    text-decoration: none;
+    outline: 0; }
+  .pushy a:hover {
+    color: #FFF; }
+  .pushy ul:first-child {
+    margin-top: 10px; }
+  .pushy.pushy-left {
+    left: 0; }
+  .pushy.pushy-right {
+    right: 0; }
 
 /* Menu Movement */
 .pushy-left {
@@ -1135,9 +1130,7 @@ th {
   -webkit-transform: translate3d(200px, 0, 0);
   transform: translate3d(200px, 0, 0); }
 
-.pushy-open-right #container {
-  margin-right: 200px; }
-
+.pushy-open-right #container,
 .pushy-open-right .push {
   -webkit-transform: translate3d(-200px, 0, 0);
   transform: translate3d(-200px, 0, 0); }
@@ -1169,7 +1162,7 @@ th {
   bottom: 0;
   left: 0;
   z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-animation: fade 500ms;
   animation: fade 500ms; }
 
@@ -1188,34 +1181,30 @@ th {
 /* Submenu Appearance */
 .pushy-submenu {
   /* Submenu Icon */ }
-
-.pushy-submenu ul {
-  padding-left: 15px;
-  -webkit-transition: max-height 0.2s ease-in-out;
-  transition: max-height 0.2s ease-in-out; }
-
-.pushy-submenu ul .pushy-link {
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out; }
-
-.pushy-submenu > a {
-  position: relative; }
-
-.pushy-submenu > a::after {
-  content: '';
-  display: block;
-  height: 11px;
-  width: 8px;
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  background: url("../img/arrow.svg") no-repeat;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s; }
+  .pushy-submenu ul {
+    padding-left: 15px;
+    -webkit-transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.2s ease-in-out; }
+    .pushy-submenu ul .pushy-link {
+      -webkit-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out; }
+  .pushy-submenu > a {
+    position: relative; }
+  .pushy-submenu > a::after {
+    content: '';
+    display: block;
+    height: 11px;
+    width: 8px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    background: url("../img/arrow.svg") no-repeat;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s; }
 
 /* Submenu Movement */
 .pushy-submenu-closed ul {
@@ -1227,20 +1216,18 @@ th {
 
 .pushy-submenu-open {
   /* Submenu Icon */ }
-
-.pushy-submenu-open ul {
-  max-height: 1000px; }
-
-.pushy-submenu-open .pushy-link {
-  opacity: 1; }
-
-.pushy-submenu-open a::after {
-  -webkit-transform: translateY(-50%) rotate(90deg);
-  transform: translateY(-50%) rotate(90deg); }
+  .pushy-submenu-open ul {
+    max-height: 1000px; }
+  .pushy-submenu-open .pushy-link {
+    opacity: 1; }
+  .pushy-submenu-open a::after {
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg); }
 
 .no-csstransforms3d .pushy-submenu-closed ul {
   max-height: none;
   display: none; }
+
 /* ==========================================================================
    Remodal's necessary styles
    ========================================================================== */
@@ -1752,7 +1739,7 @@ button.btn-light, button.btn-dark {
   line-height: 1.5rem;
   color: #1c1e20;
   letter-spacing: 0.05rem;
-  padding: 0.35rem 1rem; }
+  padding: 0.3rem 1rem; }
 
 button.btn-light {
   background-color: #fff;
@@ -1760,7 +1747,7 @@ button.btn-light {
   color: #1c1e20; }
   button.btn-light:hover {
     color: #1c1e20;
-    background: #ddd; }
+    background: #ccc; }
 
 button.btn-dark {
   background: #1c1e20;
@@ -1768,7 +1755,7 @@ button.btn-dark {
   border-color: transparent; }
   button.btn-dark:hover {
     color: #fff;
-    background: #1c1e20; }
+    background: #818181; }
 
 button[type="submit"], button.btn-fake-submit {
   font-size: 1.125rem;
@@ -1778,8 +1765,8 @@ button[type="submit"], button.btn-fake-submit {
   margin-bottom: 0;
   padding: 0.375rem 1.5rem; }
   button[type="submit"]:hover, button.btn-fake-submit:hover {
-    color: #af404c;
-    border-color: #af404c; }
+    border-color: #af404c;
+    background-color: #818181; }
 
 /* Specific Button Styles -------------------- */
 button.btn-big {
@@ -1901,6 +1888,8 @@ button.btn-tertiary {
       top: 8px; }
     .menu span:nth-child(3) {
       top: 16px; }
+  .menu:hover span {
+    background: #9a9a9a; }
 
 .transparent {
   opacity: 0; }
@@ -2039,6 +2028,8 @@ fieldset {
       margin-bottom: 0; }
       .main-nav .logo-wrap p span {
         font-weight: bold; }
+    .main-nav .logo-wrap:hover p {
+      color: #9a9a9a; }
   .main-nav ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2096,15 +2087,10 @@ fieldset {
   z-index: 120;
   width: 100%;
   padding: 1rem 6rem;
-  background: #1c1e20;
-  -webkit-animation: fade 500ms;
-          animation: fade 500ms; }
+  background: #1c1e20; }
   @media (max-width: 47.99em) {
     .header {
       padding: 0.75rem 3rem; } }
-
-.pushy-open-right .header {
-  right: 200px; }
 
 footer {
   width: 100%;
@@ -2172,7 +2158,7 @@ main {
   margin-bottom: 1.5rem; }
 
 .featured-content {
-  background: url("../img/china.jpeg");
+  background: url("../img/china.jpg");
   background-size: cover; }
   @media (min-width: 75.01em) {
     .featured-content .play {
@@ -2204,7 +2190,7 @@ main {
 
 .erlebnis {
   position: relative;
-  background: url("../img/waterfall.jpeg");
+  background: url("../img/waterfall.jpg");
   background-size: cover; }
   .erlebnis .bg-module {
     padding-bottom: 0; }
@@ -2228,7 +2214,7 @@ main {
   position: relative;
   width: 100%;
   height: 23rem;
-  background: url("../img/desert.jpeg");
+  background: url("../img/desert.jpg");
   background-size: 100%;
   background-position: bottom; }
   .yt-video .yt-video-controls {
@@ -2316,7 +2302,7 @@ main {
       margin-bottom: 0; }
 
 #facts {
-  background: url("../img/green-night.jpeg");
+  background: url("../img/green-night.jpg");
   background-size: cover; }
 
 section.facts-list {
@@ -2331,7 +2317,7 @@ section.facts-list {
       line-height: 1.5rem; }
 
 #contact form {
-  margin-top: 6rem; }
+  margin-top: 4.5rem; }
 
 .recipe {
   display: none; }
@@ -2359,4 +2345,4 @@ section.facts-list {
       -ms-flex-pack: end;
           justify-content: flex-end; }
   .page-cta .nav-right .login {
-    margin-right: 1rem; }
+    margin-right: 1.5rem; }

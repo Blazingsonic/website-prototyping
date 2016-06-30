@@ -11,7 +11,7 @@ button.btn-light, button.btn-dark {
 	@include type-setting(-2);
 	color: $black;
 	letter-spacing: 0.05rem;;
-	padding: 0.35rem 1rem;
+	padding: 0.3rem 1rem;
 }
 
 button.btn-light {
@@ -21,7 +21,7 @@ button.btn-light {
 
 	&:hover {
 		color: $black;
-		background: #ddd;
+		background: #ccc;
 	}
 }
 
@@ -32,7 +32,7 @@ button.btn-dark {
 
 	&:hover {
 		color: $white;
-		background: $black;
+		background: $grey;
 	}
 }
 
@@ -44,8 +44,9 @@ button[type="submit"], button.btn-fake-submit {
 	padding: $base-line-height / 4 $base-line-height;
 
 	&:hover {
-		color: #af404c;
+		// color: $black;
 		border-color: #af404c;
+		background-color: $grey;
 	}
 }
 
