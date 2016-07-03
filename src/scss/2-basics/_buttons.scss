@@ -71,4 +71,8 @@ button.btn-tertiary {
 	color: $black;
 	background-color: $grey-lightest;
 	padding: 0.35rem 1rem;
+	
+	&:hover {
+		background-color: $grey-light;
+	}
 }

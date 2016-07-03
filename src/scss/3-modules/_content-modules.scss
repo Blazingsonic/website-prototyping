@@ -273,11 +273,184 @@ section.facts-list {
 	}
 }
 
+// ==========================================================================
+// Countries Module
+// ==========================================================================
 
+.countries--text {
+	max-width: 22rem;
+	margin-bottom: $base-line-height * 2;
+}
 
+.countries-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 
+.countries-list--item {
+	margin-right: $base-line-height * 2;
+	
+	&:hover .country-text {
+		color: $black;
+		fill: $black;
+	}
+}
 
+.country-text {
+	@include type-setting(-1);
+	color: $grey-light;
+	transition: color 200ms ease;
+}
 
+// ==========================================================================
+// Travelcards Module
+// ==========================================================================
+
+#travelcards {
+	background-color: #F0F0F0;
+}
+
+.travelcards--filter {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: $base-line-height * 2;
+}
+
+.travelcards--filter-text {
+	margin-bottom: 0;
+}
+
+// .travelcards--land {
+// 	width: 3.25rem;
+// }
+
+// .travelcards--stadt {
+// 	width: 3.35rem;	
+// }
+
+// .travelcards--jahreszeit {
+// 	width: 5.2rem;
+// }
+
+// .travelcards--reisetyp {
+// 	width: 4.53rem;
+// }
+
+.travelcards--list {
+	max-width: 58rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: $base-line-height;
+}
+
+.travelcard {
+	margin-bottom: $base-line-height;
+}
+
+.travelcard--img-container {
+	position: relative;
+}
+
+.travelcard--img {
+	width: 100%;
+	height: 18rem;
+}
+
+.travelcard--icons {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.travelcard--play {
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	background-color: $white;
+	border-radius: 50%;
+	margin-right: 0.75rem;
+	cursor: pointer;
+}
+
+.travelcard--download {
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.6rem;
+	background-color: $white;
+	cursor: pointer;
+}
+
+#haifa {
+	background: url($path-img + '/haifa.jpg');
+	background-size: cover;
+}
+#negev {
+	background: url($path-img + '/negev.jpg');
+	background-size: cover;
+}
+#dubai {
+	background: url($path-img + '/dubai.jpg');
+	background-size: cover;
+}
+#philippines {
+	background: url($path-img + '/philippines.jpg');
+	background-size: cover;
+}
+#fuji {
+	background: url($path-img + '/fuji.jpg');
+	background-size: cover;
+}
+#tokyo {
+	background: url($path-img + '/tokyo.jpg');
+	background-size: cover;
+}
+
+.travelcard--body {
+	background: #FFF;
+	padding: $base-line-height;
+	
+	p {
+		color: $grey-light;	
+	}
+}
+
+.travelcard--title {
+	font-weight: bold;
+}
+
+.travelcard--info-body {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.travelcard--info {
+	display: flex;
+	flex-flow: column nowrap;
+	
+	p {
+		margin-bottom: 0;
+	}
+
+	&:first-child {
+		margin-right: $base-line-height;
+	}
+}
+
+.travelcards--load {
+	cursor: pointer;
+	
+	&:hover {
+		color: $grey-light;
+	}
+}
 
 
 

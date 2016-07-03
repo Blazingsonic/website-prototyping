@@ -206,7 +206,7 @@ $.fn.scrollView = function () {
   return this.each(function () {
     $('html, body').animate({
       scrollTop: $(this).offset().top
-    }, 700);
+    }, 1000);
   });
 }
 
@@ -219,10 +219,18 @@ $.fn.scrollView = function () {
 $('.menu').click(function() {
 
 	if (menuOpen) {
-		TweenMax.to($('.header'), 0.17, {x: 0});
+		menuCloseTl = new TimelineMax();
+
+		menuCloseTl
+			// .to($('.header'), 0.2, {x: '-200'})
+			.to($('.header'), 0.1, {x: 0});
 		menuOpen = false;
 	} else {
-		TweenMax.to($('.header'), 0.25, {x: '-=200'}, '+=0.2');
+		menuOpenTl = new TimelineMax();
+
+		menuOpenTl
+			.to($('.header'), 0.15, {x: 0})
+			.to($('.header'), 0.2, {x: '-=200'});
 		menuOpen = true;
 	}
 
@@ -235,8 +243,11 @@ $('.menu').click(function() {
 // Simulate click on icon when other part of screen is clicked
 
 $('.site-overlay').click(function() {
+	menuCloseTl = new TimelineMax();
 
-	TweenMax.to($('.header'), 0.17, {x: 0});
+	menuCloseTl
+		// .to($('.header'), 0.2, {x: '-200'})
+		.to($('.header'), 0.1, {x: 0});
 	menuOpen = false;
 
 	$('.menu span:nth-child(2)').toggleClass('transparent');
@@ -245,13 +256,19 @@ $('.site-overlay').click(function() {
 });
 
 $('.pushy-link').click(function() {
+	// console.log($(this).text());
+	if ($(this).text() !== 'Video-Portal') {
+		menuCloseTl = new TimelineMax();
 
-	TweenMax.to($('.header'), 0.17, {x: 0});
-	menuOpen = false;
+		menuCloseTl
+			// .to($('.header'), 0.2, {x: '-200'})
+			.to($('.header'), 0.1, {x: 0});
+		menuOpen = false;
 
-	$('.menu span:nth-child(2)').toggleClass('transparent');
-	$('.menu span:nth-child(1)').toggleClass('rotate-top');
-	$('.menu span:nth-child(3)').toggleClass('rotate-bottom');
+		$('.menu span:nth-child(2)').toggleClass('transparent');
+		$('.menu span:nth-child(1)').toggleClass('rotate-top');
+		$('.menu span:nth-child(3)').toggleClass('rotate-bottom');
+	}
 });
 
 // Animate vorteile from left to right
@@ -299,6 +316,25 @@ $(window).scroll(function (event) {
 	}
 });
 
+// Animate Travelcards
+
+$('.travelcards--load').click(function() {
+	changeTravelcards();
+});
+
+$('select').change(function() {
+	changeTravelcards();
+});
+
+function changeTravelcards() {
+	$travelcards = $('.travelcard');
+	tcTimeline = new TimelineMax();
+
+	tcTimeline
+		.staggerTo($travelcards, 0.7, {x: '+= 30', autoAlpha: 0}, 0.1)
+		.set($travelcards, {x: '-=60'})
+		.staggerTo($travelcards, 0.7, {x: '+= 30', autoAlpha: 1}, 0.1);
+}
 
 
 

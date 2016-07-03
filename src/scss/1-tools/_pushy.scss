@@ -18,16 +18,19 @@ $menu_width: 200px !default;
     visibility: hidden;
     -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
 
-    a{
+    a {
         display: block;
-        color: #b3b3b1;
+        // color: #b3b3b1;
         padding: 15px 30px;
         text-decoration: none;
         outline: 0;
+        @include type-setting(-2);
+        text-transform: uppercase;
+        text-align: center;
     }
 
     a:hover{
-        color: #FFF;
+        // color: #FFF;
     }
 
     ul:first-child{
@@ -82,6 +85,14 @@ $menu_width: 200px !default;
         -ms-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
     }
+}
+
+.pushy ul {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 /* Menu Transitions */

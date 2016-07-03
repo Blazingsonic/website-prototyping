@@ -1103,12 +1103,13 @@ th {
   /* enables momentum scrolling in iOS overflow elements */ }
   .pushy a {
     display: block;
-    color: #b3b3b1;
     padding: 15px 30px;
     text-decoration: none;
-    outline: 0; }
-  .pushy a:hover {
-    color: #FFF; }
+    outline: 0;
+    font-size: 0.79rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    text-align: center; }
   .pushy ul:first-child {
     margin-top: 10px; }
   .pushy.pushy-left {
@@ -1139,6 +1140,14 @@ th {
 .pushy-open-right .pushy {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
+
+.pushy ul {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%; }
 
 /* Menu Transitions */
 #container,
@@ -1693,12 +1702,14 @@ h4, .h4 {
 p {
   font-size: 0.79rem;
   line-height: 1.5rem;
-  letter-spacing: 0.1rem; }
+  line-height: 1.4rem;
+  letter-spacing: 0.06rem; }
 
 /* Specific Font Styles -------------------- */
 p.small {
   font-size: 0.79rem;
   line-height: 1.5rem;
+  line-height: 1.4rem;
   letter-spacing: 0.1rem; }
 
 span.medium {
@@ -1787,6 +1798,8 @@ button.btn-tertiary {
   color: #1c1e20;
   background-color: #f1f1f1;
   padding: 0.35rem 1rem; }
+  button.btn-tertiary:hover {
+    background-color: #9a9a9a; }
 
 .hide-svg-defs {
   width: 0;
@@ -1920,6 +1933,47 @@ button.btn-tertiary {
     .play {
       margin-bottom: 6rem; } }
 
+.europe, .asia, .america, .south-america, .africa {
+  height: 3rem;
+  -webkit-transition: fill 200ms ease;
+  transition: fill 200ms ease;
+  cursor: pointer; }
+  .europe:hover, .asia:hover, .america:hover, .south-america:hover, .africa:hover {
+    fill: #1c1e20; }
+
+.asia {
+  fill: #1c1e20; }
+
+.europe, .america, .south-america, .africa {
+  fill: #9a9a9a; }
+
+.tc-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  fill: #1c1e20;
+  width: 2rem;
+  height: 2rem; }
+  .tc-play:hover .tc-play-button {
+    fill: #818181; }
+
+.tc-play-button {
+  fill: #1c1e20; }
+
+.download {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  fill: #1c1e20;
+  width: 1rem;
+  height: 1rem; }
+  .download:hover {
+    fill: #818181; }
+
 /* Tiny Icons -------------------- */
 /* Other Icons -------------------- */
 ::-webkit-input-placeholder {
@@ -1986,6 +2040,13 @@ textarea {
 
 fieldset {
   border: none; }
+
+select {
+  background: #f0f0f0;
+  font-size: 0.79rem;
+  line-height: 1.5rem;
+  height: 100%;
+  margin-left: 1rem; }
 
 /* Main Nav -------------------- */
 .main-nav {
@@ -2324,6 +2385,171 @@ section.facts-list {
   .recipe button {
     margin-top: 1.5rem; }
 
+.countries--text {
+  max-width: 22rem;
+  margin-bottom: 3rem; }
+
+.countries-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.countries-list--item {
+  margin-right: 3rem; }
+  .countries-list--item:hover .country-text {
+    color: #1c1e20;
+    fill: #1c1e20; }
+
+.country-text {
+  font-size: 0.889rem;
+  line-height: 1.5rem;
+  color: #9a9a9a;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease; }
+
+#travelcards {
+  background-color: #F0F0F0; }
+
+.travelcards--filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem; }
+
+.travelcards--filter-text {
+  margin-bottom: 0; }
+
+.travelcards--list {
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem; }
+
+.travelcard {
+  margin-bottom: 1.5rem; }
+
+.travelcard--img-container {
+  position: relative; }
+
+.travelcard--img {
+  width: 100%;
+  height: 18rem; }
+
+.travelcard--icons {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.travelcard--play {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  cursor: pointer; }
+
+.travelcard--download {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  cursor: pointer; }
+
+#haifa {
+  background: url("../img/haifa.jpg");
+  background-size: cover; }
+
+#negev {
+  background: url("../img/negev.jpg");
+  background-size: cover; }
+
+#dubai {
+  background: url("../img/dubai.jpg");
+  background-size: cover; }
+
+#philippines {
+  background: url("../img/philippines.jpg");
+  background-size: cover; }
+
+#fuji {
+  background: url("../img/fuji.jpg");
+  background-size: cover; }
+
+#tokyo {
+  background: url("../img/tokyo.jpg");
+  background-size: cover; }
+
+.travelcard--body {
+  background: #FFF;
+  padding: 1.5rem; }
+  .travelcard--body p {
+    color: #9a9a9a; }
+
+.travelcard--title {
+  font-weight: bold; }
+
+.travelcard--info-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+
+.travelcard--info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+  .travelcard--info p {
+    margin-bottom: 0; }
+  .travelcard--info:first-child {
+    margin-right: 1.5rem; }
+
+.travelcards--load {
+  cursor: pointer; }
+  .travelcards--load:hover {
+    color: #9a9a9a; }
+
 .page-cta .hero-wrap {
   background: url("../img/hero-cta.png");
   background-size: cover;
@@ -2337,7 +2563,7 @@ section.facts-list {
   background-color: #fff; }
 
 .page-cta .main-nav ul {
-  width: 23rem; }
+  width: 24rem; }
 
 .page-cta .nav-right {
   -webkit-box-pack: end;
@@ -2345,4 +2571,26 @@ section.facts-list {
       -ms-flex-pack: end;
           justify-content: flex-end; }
   .page-cta .nav-right .login {
+    margin-right: 1.5rem; }
+
+#bib {
+  background: url("../img/forest-winter.jpg");
+  background-size: cover;
+  background-position: right bottom; }
+  #bib .black-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 9rem 4.5rem; }
+
+.page-bib .module-wrap {
+  background-color: #fff; }
+
+.page-bib .main-nav ul {
+  width: 23rem; }
+
+.page-bib .nav-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .page-bib .nav-right .login {
     margin-right: 1.5rem; }

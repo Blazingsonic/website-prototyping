@@ -39,13 +39,15 @@ h4, .h4 {
 
 p {
 	@include type-setting(-2);
-	letter-spacing: 0.1rem;
+	line-height: 1.4rem;
+	letter-spacing: 0.06rem;
 }
 
 /* Specific Font Styles -------------------- */
 
 p.small {
 	@include type-setting(-2);
+	line-height: 1.4rem;
 	letter-spacing: 0.1rem;
 }
 

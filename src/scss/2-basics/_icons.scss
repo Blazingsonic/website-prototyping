@@ -149,6 +149,61 @@
 	}
 }
 
+// Countries
+
+.europe, .asia, .america, .south-america, .africa {
+	height: 3rem;
+	transition: fill 200ms ease;
+	cursor: pointer;
+	
+	&:hover {
+		fill: $black;
+	}
+}
+
+.asia {
+	fill: $black;
+}
+
+.europe, .america, .south-america, .africa {
+	fill: $grey-light;
+}
+
+// Travelcard Play
+
+.tc-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	fill: $black;
+	width: 2rem;
+	height: 2rem;
+	
+	&:hover .tc-play-button {
+		fill: $grey;
+	}
+}
+.tc-play-button {
+	fill: $black;
+}
+
+// Download
+
+.download {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	fill: $black;
+	width: 1rem;
+	height: 1rem;
+	
+	&:hover {
+		fill: $grey;
+	}
+}
+
 /* Tiny Icons -------------------- */
 
 

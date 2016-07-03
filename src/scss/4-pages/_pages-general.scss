@@ -31,6 +31,38 @@
 .page-cta {
 	
 	.main-nav ul {
+		width: 24rem;
+	}
+
+	.nav-right {
+		justify-content: flex-end;
+		
+		.login {
+			margin-right: $base-line-height;
+		}
+	}
+}
+
+// ==========================================================================
+// BIB PAGE
+// ==========================================================================
+
+#bib {
+	background: url($path-img + '/forest-winter.jpg');
+	background-size: cover;
+	background-position: right bottom;
+	
+	.black-bg {
+		background-color: rgba(0, 0, 0, 0.6);
+		padding: $base-line-height * 6 $base-line-height * 3;
+	}
+}
+
+.page-bib {
+	.module-wrap {
+		background-color: $white;
+	}
+	.main-nav ul {
 		width: 23rem;
 	}
 
@@ -42,3 +74,11 @@
 		}
 	}
 }
+
+
+
+
+
+
+
+
