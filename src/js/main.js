@@ -151,7 +151,7 @@ $(window).scroll(function (event) {
     		if (scroll < countriesOffset - 1) { // First section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(1)').addClass('active');
-		    } else if (scroll >= countriesOffset && scroll < travelcardsOffset) { // Second section
+		    } else if (scroll >= countriesOffset && scroll < overviewOffset) { // Second section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(2)').addClass('active');
 		    } else if (scroll >= overviewOffset) { // Fourth section
@@ -301,7 +301,7 @@ TweenMax.set($vorteil, {x: '-=50', opacity: 0});
 
 $(window).scroll(function (event) {
 	var scroll = $(window).scrollTop();
-	if (scroll > vorteileOffset && vorteilFlag == false) {
+	if (scroll > (vorteileOffset - 200) && vorteilFlag == false) {
 		TweenMax.staggerTo($vorteil, 1,  {x: '0', opacity: 1}, 0.25);
 		vorteilFlag = true;
 	}
