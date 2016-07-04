@@ -31,6 +31,14 @@ if (currentUrl === 'cta.html') {
 	var contactOffset = $('#contact').offset().top - 80;
 }
 
+//bib.html
+
+if (currentUrl === 'bib.html') {
+	var countriesOffset = $('#countries').offset().top - 60;
+	var travelcardsOffset = $('#travelcards').offset().top - 60;
+	var overviewOffset = $('#overview').offset().top - 80;
+} 
+
 // ==========================================================================
 // Tests
 // ==========================================================================
@@ -136,6 +144,19 @@ $(window).scroll(function (event) {
 		    } else if (scroll >= contactOffset) { // Fourth section
 		    	$('.main-nav li').removeClass('active');
 		    	$('.main-nav li:nth-child(4)').addClass('active');
+		    }
+
+    	} else if (currentUrl === 'bib.html') {
+
+    		if (scroll < countriesOffset - 1) { // First section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(1)').addClass('active');
+		    } else if (scroll >= countriesOffset && scroll < travelcardsOffset) { // Second section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(2)').addClass('active');
+		    } else if (scroll >= overviewOffset) { // Fourth section
+		    	$('.main-nav li').removeClass('active');
+		    	$('.main-nav li:nth-child(3)').addClass('active');
 		    }
 
     	}
