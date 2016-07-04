@@ -33,9 +33,11 @@
     height: $base-line-height * 4;
     border-radius: 0.8em;
     background-color: transparent;
-    border: 0.15rem solid $white;
+    // border: 0.15rem solid $white;
     padding: 0.8rem;
     margin-bottom: $base-line-height;
+    @include type-setting(8);
+    font-weight: 100;
 }
 
 .rounded-icon-big-black {
@@ -47,9 +49,11 @@
     height: $base-line-height * 4;
     border-radius: 0.8em;
     background-color: transparent;
-    border: 0.15rem solid $black;
+    // border: 0.15rem solid $black;
     padding: 0.8rem;
     margin-bottom: $base-line-height;
+    @include type-setting(8);
+    font-weight: 100;
 }
 
 .vorteil-number-bottom, .vorteil-number-top {

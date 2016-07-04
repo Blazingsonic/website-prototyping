@@ -1589,6 +1589,12 @@ a:visited {
 a:hover {
   color: #818181; }
 
+.pushy a:hover {
+  color: #c7c7c7; }
+
+.pushy .sub-link a:hover {
+  color: #9a9a9a; }
+
 /* Helper Classes ------------------ */
 .no-flexbox .item {
   display: inline-block; }
@@ -1629,7 +1635,7 @@ a:hover {
   max-width: 34rem; }
   @media (max-width: 47.99em) {
     .mw-small {
-      max-width: 20rem; } }
+      max-width: 28rem; } }
 
 .mw-medium {
   max-width: 40rem; }
@@ -1840,9 +1846,11 @@ button.btn-tertiary {
   height: 6rem;
   border-radius: 0.8em;
   background-color: transparent;
-  border: 0.15rem solid #fff;
   padding: 0.8rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-size: 2.566rem;
+  line-height: 3rem;
+  font-weight: 100; }
 
 .rounded-icon-big-black {
   position: relative;
@@ -1862,9 +1870,11 @@ button.btn-tertiary {
   height: 6rem;
   border-radius: 0.8em;
   background-color: transparent;
-  border: 0.15rem solid #1c1e20;
   padding: 0.8rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-size: 2.566rem;
+  line-height: 3rem;
+  font-weight: 100; }
 
 .vorteil-number-bottom, .vorteil-number-top {
   font-size: 0.889rem;
@@ -2168,6 +2178,10 @@ select {
 .remodal[data-remodal-id="modal-login"] .remodal-close {
   top: 0; }
 
+.sub-link a {
+  color: #818181;
+  padding: 5px 30px; }
+
 .header {
   position: fixed;
   z-index: 120;
@@ -2398,20 +2412,19 @@ section.facts-list {
     @media (max-width: 47.99em) {
       section.facts-list .fl-item {
         margin-bottom: 3rem; } }
-    section.facts-list .fl-item div {
-      font-size: 1.424rem;
-      line-height: 1.5rem; }
 
 #contact form {
   margin-top: 4.5rem; }
 
 .recipe {
   display: none; }
+  .recipe a:first-of-type {
+    margin-right: 10%; }
   .recipe button {
     margin-top: 1.5rem; }
 
 .countries--text {
-  max-width: 22rem;
+  max-width: 24rem;
   margin-bottom: 3rem; }
 
 .countries-list {
@@ -2430,6 +2443,8 @@ section.facts-list {
 
 .countries-list--item {
   margin-right: 3rem; }
+  .countries-list--item .active {
+    color: #1c1e20; }
   .countries-list--item:hover .country-text {
     color: #1c1e20; }
   .countries-list--item:hover svg {
@@ -2579,9 +2594,6 @@ section.facts-list {
 
 .overview .row {
   margin-top: 6rem; }
-  .overview .row div {
-    font-size: 1.424rem;
-    line-height: 1.5rem; }
 
 .page-cta .hero-wrap {
   background: url("../img/hero-cta.png");

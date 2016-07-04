@@ -249,7 +249,7 @@ section.facts-list {
 		}
 		
 		div {
-			@include type-setting(3);
+			//@include type-setting(3);
 		}
 	}
 }
@@ -268,6 +268,12 @@ section.facts-list {
 .recipe {
 	display: none;
 	
+	a {
+		&:first-of-type {
+			margin-right: 10%;
+		}
+	}
+
 	button {
 		margin-top: $base-line-height;
 	}
@@ -278,7 +284,7 @@ section.facts-list {
 // ==========================================================================
 
 .countries--text {
-	max-width: 22rem;
+	max-width: 24rem;
 	margin-bottom: $base-line-height * 2;
 }
 
@@ -291,6 +297,10 @@ section.facts-list {
 
 .countries-list--item {
 	margin-right: $base-line-height * 2;
+	
+	.active {
+		color: $black;
+	}
 	
 	&:hover .country-text {
 		color: $black;
@@ -465,7 +475,7 @@ section.facts-list {
 		margin-top: $base-line-height * 4;
 	
 		div {
-			@include type-setting(3);
+			// @include type-setting(3);
 		}
 	}
 }

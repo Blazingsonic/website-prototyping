@@ -90,6 +90,18 @@ a {
 	}
 }
 
+.pushy a {
+	&:hover {
+		color: #c7c7c7;
+	}
+}
+
+.pushy .sub-link a {
+	&:hover {
+		color: $grey-light;
+	}
+}
+
 /* Helper Classes ------------------ */
 
 .no-flexbox .item {
@@ -142,7 +154,7 @@ a {
 	max-width: 34rem;
 	
 	@include media('<small') {
-		max-width: 20rem;
+		max-width: 28rem;
 	}
 }
 

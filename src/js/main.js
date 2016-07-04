@@ -180,6 +180,7 @@ $(document).ready(function() {
 
 		$('#contact').scrollView();
 
+		$('.recipe p').text('Wir werden Ihre Anfrage sofort bearbeiten und Ihnen eine Bestätigung an Ihre Email-Adresse senden. Sie können solange schon einmal in unserer Videobibliothek stöbern oder zur Startseite zurückkehren.');
 		var $recipeHeading = $('.recipe h2');
 		var $recipeParagraph = $('.recipe p');
 		var $recipeImg = $('.recipe div');
