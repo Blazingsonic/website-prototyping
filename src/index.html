@@ -26,7 +26,7 @@
         	<li class="pushy-link hide-desktop"><a href="#vr">VR</a></li>
         	<li class="pushy-link hide-desktop"><a href="#erlebnis">Erlebnis</a></li>
         	<li class="pushy-link hide-desktop"><a href="#cta">Reisen</a></li>
-        	<li class="pushy-link hide-desktop"><a href="#">Login</a></li>
+        	<li class="pushy-link hide-desktop"><a data-remodal-target="modal-login" href="#">Login</a></li>
         	<li class="pushy-link"><a href="bib.html">Videobibliothek</a></li>
         	<li class="pushy-link sub-link"><a href="#">Impressum</a></li>
         	<li class="pushy-link sub-link"><a href="#">Privatssphäre</a></li>
@@ -54,7 +54,7 @@
 			</ul>
 			<div class="nav-right">
 				<a href="cta.html"><button class="btn-light">Demo buchen</button></a>
-				<a class="hide-tablet" href="#search">LOGIN</a>			
+				<a data-remodal-target="modal-login" class="hide-tablet" href="#">LOGIN</a>			
 				<a class="menu menu-btn">
 					<span></span>
 					<span></span>
@@ -62,6 +62,14 @@
 				</a>
 			</div>
 		</nav>
+
+		<div class="remodal" data-remodal-id="modal-login">
+			<button data-remodal-action="close" class="remodal-close"></button>
+		  	<h3>Jetzt anmelden</h3>
+			<p class="centered">Melden Sie sich jetzt an oder registrieren Sie sich, um auf Ihr Konto zuzugreifen. Von dort können Sie Ihre gebuchten Services und gekauften Videos einsehen und verwalten.</p>
+			<button class="btn-tertiary">Anmelden</button>
+			<button class="btn-tertiary">Registrieren</button>
+		</div>
 
 	</header>
 
