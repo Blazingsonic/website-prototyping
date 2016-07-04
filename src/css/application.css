@@ -2194,8 +2194,9 @@ select {
       padding: 0.75rem 3rem; } }
 
 footer {
-  width: 100%;
   margin: 0; }
+  footer .row {
+    margin: 0; }
 
 .footer-body {
   padding: 3rem 3rem;
