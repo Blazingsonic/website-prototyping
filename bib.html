@@ -20,10 +20,9 @@
 	<!-- Pushy Menu -->
 	<nav class="pushy pushy-right">
 	    <ul>
-	        <li class="pushy-link hide-desktop"><a href="#interesse">Interesse</a></li>
-        	<li class="pushy-link hide-desktop"><a href="#commerce">Erklärung</a></li>
-        	<li class="pushy-link hide-desktop"><a href="#facts">Fakten</a></li>
-        	<li class="pushy-link hide-desktop"><a href="#contact">Kontakt</a></li>
+	        <li class="pushy-link hide-desktop"><a href="#bib">Start</a></li>
+        	<li class="pushy-link hide-desktop"><a href="#countries">Buchen</a></li>
+        	<li class="pushy-link hide-desktop"><a href="#overview">Überblick</a></li>
         	<li class="pushy-link hide-desktop"><a href="#">Login</a></li>
         	<li class="pushy-link"><a href="bib.html">Video-Portal</a></li>
 	    </ul>
@@ -42,13 +41,13 @@
 				<p>/ Experience <span>TRAVEL</span></p>
 			</a>
 			<ul class="hide-tablet">
-				<li class="active"><a href="#interesse">Interesse</a></li>
-				<li><a href="#commerce">Erklärung</a></li>
-				<li><a href="#facts">Fakten</a></li>
-				<li><a href="#contact">Kontakt</a></li>
+				<li class="active"><a href="#bib">START</a></li>
+				<li><a href="#countries">BUCHEN</a></li>
+				<li><a href="#overview">ÜBERBLICK</a></li>
 			</ul>
 			<div class="nav-right">
-				<a class="login hide-tablet" href="#search">LOGIN</a>			
+				<a href="cta.html"><button class="btn-light">Demo buchen</button></a>
+				<a data-remodal-target="modal-login" class="hide-tablet" href="#">LOGIN</a>			
 				<a class="menu menu-btn">
 					<span></span>
 					<span></span>
@@ -56,6 +55,14 @@
 				</a>
 			</div>
 		</nav>
+
+		<div class="remodal" data-remodal-id="modal-login">
+			<button data-remodal-action="close" class="remodal-close"></button>
+		  	<h3>Jetzt anmelden</h3>
+			<p class="centered">Melden Sie sich jetzt an oder registrieren Sie sich, um auf Ihr Konto zuzugreifen. Von dort können Sie Ihre gebuchten Services und gekauften Videos einsehen und verwalten.</p>
+			<button class="btn-tertiary">Anmelden</button>
+			<button class="btn-tertiary">Registrieren</button>
+		</div>
 
 	</header>
 
@@ -291,7 +298,7 @@
 					    </select>
 					</section>
 					<section class="row travelcards--list">
-						<article class="col-xs-12 col-sm-6 travelcard">
+						<article class="col-xs-12 col-md-6 travelcard">
 							<section class="travelcard--img-container">
 								<div id="haifa" class="travelcard--img"></div>
 								<div class="travelcard--icons">
@@ -324,7 +331,7 @@
 								</div>
 							</section>
 						</article>
-						<article class="col-xs-12 col-sm-6 travelcard">
+						<article class="col-xs-12 col-md-6 travelcard">
 							<section class="travelcard--img-container">
 								<div id="negev" class="travelcard--img"></div>
 								<div class="travelcard--icons">
@@ -357,7 +364,7 @@
 								</div>
 							</section>
 						</article>
-						<article class="col-xs-12 col-sm-6 travelcard">
+						<article class="col-xs-12 col-md-6 travelcard">
 							<section class="travelcard--img-container">
 								<div id="dubai" class="travelcard--img"></div>
 								<div class="travelcard--icons">
@@ -390,7 +397,7 @@
 								</div>
 							</section>
 						</article>
-						<article class="col-xs-12 col-sm-6 travelcard">
+						<article class="col-xs-12 col-md-6 travelcard">
 							<section class="travelcard--img-container">
 								<div id="fuji" class="travelcard--img"></div>
 								<div class="travelcard--icons">
@@ -423,7 +430,7 @@
 								</div>
 							</section>
 						</article>
-						<article class="col-xs-12 col-sm-6 travelcard">
+						<article class="col-xs-12 col-md-6 travelcard">
 							<section class="travelcard--img-container">
 								<div id="tokyo" class="travelcard--img"></div>
 								<div class="travelcard--icons">
@@ -456,7 +463,7 @@
 								</div>
 							</section>
 						</article>
-						<article class="col-xs-12 col-sm-6 travelcard">
+						<article class="col-xs-12 col-md-6 travelcard">
 							<section class="travelcard--img-container">
 								<div id="philippines" class="travelcard--img"></div>
 								<div class="travelcard--icons">
@@ -505,23 +512,23 @@
 			<!-- Begin Overview -->
 			<div id="overview" class="module-wrap black">
 				
-				<article class="module text-center">
+				<article class="module overview text-center">
 					<h2>Übersicht</h2>
 					<p class="centered mw-small">Wir bieten ein großes Spektrum an maßgeschneiderten
 					<br>
 					VR-Erlebnissen für Ihr bestehendes System.</p>
 					<section class="row">
-						<article class="col-xs-12 col-sm-4 fl-item">
-							<div class="rounded-icon-big centered">33</div>
-							<h3>Zufriedene Kunden</h3>
-						</article>
-						<article class="col-xs-12 col-sm-4 fl-item">
-							<div class="rounded-icon-big centered">111</div>
-							<h3>% mehr Buchungen</h3>
-						</article>
-						<article class="col-xs-12 col-sm-4 fl-item">
-							<div class="rounded-icon-big centered">80</div>
+						<article class="col-xs-12 col-sm-4">
+							<div class="rounded-icon-big-black centered">66</div>
 							<h3>VR-Erlebnisse</h3>
+						</article>
+						<article class="col-xs-12 col-sm-4">
+							<div class="rounded-icon-big-black centered">56</div>
+							<h3>Orte Weltweit</h3>
+						</article>
+						<article class="col-xs-12 col-sm-4">
+							<div class="rounded-icon-big-black centered">12</div>
+							<h3>Neue pro Monat</h3>
 						</article>
 					</section>
 				</article>
