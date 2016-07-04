@@ -1844,6 +1844,28 @@ button.btn-tertiary {
   padding: 0.8rem;
   margin-bottom: 1.5rem; }
 
+.rounded-icon-big-black {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.8em;
+  background-color: transparent;
+  border: 0.15rem solid #1c1e20;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem; }
+
 .vorteil-number-bottom, .vorteil-number-top {
   font-size: 0.889rem;
   line-height: 1.5rem;
@@ -2143,6 +2165,9 @@ select {
     .main-nav .nav-right button {
       margin-bottom: 0; }
 
+.remodal[data-remodal-id="modal-login"] .remodal-close {
+  top: 0; }
+
 .header {
   position: fixed;
   z-index: 120;
@@ -2400,12 +2425,14 @@ section.facts-list {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  cursor: pointer; }
 
 .countries-list--item {
   margin-right: 3rem; }
   .countries-list--item:hover .country-text {
-    color: #1c1e20;
+    color: #1c1e20; }
+  .countries-list--item:hover svg {
     fill: #1c1e20; }
 
 .country-text {
@@ -2550,6 +2577,12 @@ section.facts-list {
   .travelcards--load:hover {
     color: #9a9a9a; }
 
+.overview .row {
+  margin-top: 6rem; }
+  .overview .row div {
+    font-size: 1.424rem;
+    line-height: 1.5rem; }
+
 .page-cta .hero-wrap {
   background: url("../img/hero-cta.png");
   background-size: cover;
@@ -2585,12 +2618,4 @@ section.facts-list {
   background-color: #fff; }
 
 .page-bib .main-nav ul {
-  width: 23rem; }
-
-.page-bib .nav-right {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-  .page-bib .nav-right .login {
-    margin-right: 1.5rem; }
+  width: 16rem; }

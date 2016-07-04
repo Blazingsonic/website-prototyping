@@ -286,6 +286,7 @@ section.facts-list {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	cursor: pointer;
 }
 
 .countries-list--item {
@@ -293,6 +294,8 @@ section.facts-list {
 	
 	&:hover .country-text {
 		color: $black;
+	}
+	&:hover svg {
 		fill: $black;
 	}
 }
@@ -452,7 +455,20 @@ section.facts-list {
 	}
 }
 
+// ==========================================================================
+// Overview Module
+// ==========================================================================
 
+.overview {
+	
+	.row {
+		margin-top: $base-line-height * 4;
+	
+		div {
+			@include type-setting(3);
+		}
+	}
+}
 
 
 

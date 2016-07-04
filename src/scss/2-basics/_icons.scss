@@ -38,6 +38,20 @@
     margin-bottom: $base-line-height;
 }
 
+.rounded-icon-big-black {
+	position: relative;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: $base-line-height * 4;
+    height: $base-line-height * 4;
+    border-radius: 0.8em;
+    background-color: transparent;
+    border: 0.15rem solid $black;
+    padding: 0.8rem;
+    margin-bottom: $base-line-height;
+}
+
 .vorteil-number-bottom, .vorteil-number-top {
 	@include type-setting(-1);
 	display: flex;
