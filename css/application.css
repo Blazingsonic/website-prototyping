@@ -2402,7 +2402,7 @@ main {
 
 /* Specific Wraps ------------------ */
 .hero-wrap {
-  background: url("../img/hero-cover.png");
+  background: url("../img/hero-cover.jpg");
   background-size: cover;
   background-position: center;
   height: 45rem; }
@@ -2758,7 +2758,7 @@ section.facts-list {
   margin-top: 6rem; }
 
 .page-cta .hero-wrap {
-  background: url("../img/hero-cta.png");
+  background: url("../img/hero-cta.jpg");
   background-size: cover;
   background-position: center;
   height: 36rem; }
