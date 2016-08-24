@@ -1619,6 +1619,9 @@ a:hover {
 .white {
   color: #fff; }
 
+.no-padding {
+  padding: 0 !important; }
+
 .mw-extra-small {
   max-width: 20rem; }
   @media (max-width: 47.99em) {
@@ -1842,10 +1845,9 @@ button.btn-tertiary {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 0.8em;
+  border-radius: 0.4em;
   background-color: transparent;
+  border: 0.15rem solid #fff;
   padding: 0.8rem;
   margin-bottom: 1.5rem;
   font-size: 2.566rem;
@@ -1870,6 +1872,7 @@ button.btn-tertiary {
   height: 6rem;
   border-radius: 0.8em;
   background-color: transparent;
+  border: 0.15rem solid #1c1e20;
   padding: 0.8rem;
   margin-bottom: 1.5rem;
   font-size: 2.566rem;
@@ -2244,7 +2247,7 @@ footer {
   margin-bottom: 0; }
 
 .footer-bottom {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 3rem;
   background-color: #1c1e20;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2262,11 +2265,24 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.footer-bib .footer-text {
+  margin-bottom: 0.5rem; }
+
 .footer-bib--title {
   color: #fff;
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: bold; }
+
+.footer-facts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .footer-facts--wrap {
   display: -webkit-box;
@@ -2276,10 +2292,10 @@ footer {
   -webkit-flex-flow: row nowrap;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -2302,8 +2318,12 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .footer-facts--item:last-child {
+    margin-right: 0; }
   .footer-facts--item span {
-    color: #9a9a9a; }
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; }
 
 .footer-info {
   display: -webkit-box;
@@ -2542,11 +2562,18 @@ main {
 
 section.facts-list {
   margin-top: 6rem; }
-  section.facts-list .fl-item {
-    width: 16rem; }
-    @media (max-width: 47.99em) {
-      section.facts-list .fl-item {
-        margin-bottom: 3rem; } }
+  @media (max-width: 47.99em) {
+    section.facts-list .fl-item {
+      margin-bottom: 3rem; } }
+
+.fl-item-1 div {
+  width: 5rem; }
+
+.fl-item-2 div {
+  width: 8rem; }
+
+.fl-item-3 div {
+  width: 5rem; }
 
 #contact form {
   margin-top: 4.5rem; }
@@ -2688,7 +2715,7 @@ section.facts-list {
   background-size: cover; }
 
 #tokyo {
-  background: url("../img/tokyo.jpg");
+  background: url("../img/japan.jpeg");
   background-size: cover; }
 
 .travelcard--body {

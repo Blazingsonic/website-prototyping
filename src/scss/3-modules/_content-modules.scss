@@ -242,7 +242,7 @@ section.facts-list {
 	margin-top: $base-line-height * 4;
 	
 	.fl-item {
-		width: 16rem;
+		// width: 16rem;
 		
 		@include media('<small') {
 			margin-bottom: $base-line-height * 2;
@@ -252,6 +252,18 @@ section.facts-list {
 			//@include type-setting(3);
 		}
 	}
+}
+
+.fl-item-1 div {
+	width: 5rem;
+}
+
+.fl-item-2 div {
+	width: 8rem;
+}
+
+.fl-item-3 div {
+	width: 5rem;
 }
 
 // ==========================================================================
@@ -422,7 +434,7 @@ section.facts-list {
 	background-size: cover;
 }
 #tokyo {
-	background: url($path-img + '/tokyo.jpg');
+	background: url($path-img + '/japan.jpeg');
 	background-size: cover;
 }
 
